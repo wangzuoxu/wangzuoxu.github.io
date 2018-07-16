@@ -108,25 +108,25 @@
 
 
 
-  <meta name="description" content="个人介绍和网站说明Hello，我是该个人博客的作者，其实是个编程小白，所以能搭建好这个博客实属不易。 我是一个在新加坡的在读博士，女博士，但是也在努力避免成为一朵奇葩。 由于作者没有打算推广这个网站，所以在上面有些心路历程，日常吐槽，学术心得啥的都有可能，如果有缘人能够发现这个网站，并且有什么话想对作者说，欢迎来邮：zuoxu.wang@gmail.com.">
-<meta name="keywords" content="介绍">
+  <meta name="description" content="TransE 模型笔记最近想follow一些关于Knowledge Graph Embedding（知识图谱嵌入，可以参考这篇综述[1]）的工作，而TransE模型[2]应该是这个工作的代表之一。 参考 http://sunzequn.com/index.php/archives/177/ 关于表示学习的前话http://nathanliuyolo.com/2017/12/09/TransE%E8">
+<meta name="keywords" content="学术笔记,TransE">
 <meta property="og:type" content="article">
-<meta property="og:title" content="网站说明和个人介绍">
-<meta property="og:url" content="http://yoursite.com/2018/07/15/网站说明/index.html">
+<meta property="og:title" content="TransE">
+<meta property="og:url" content="http://yoursite.com/2018/07/15/TransE/index.html">
 <meta property="og:site_name" content="Zoe Wang&#39;s studio">
-<meta property="og:description" content="个人介绍和网站说明Hello，我是该个人博客的作者，其实是个编程小白，所以能搭建好这个博客实属不易。 我是一个在新加坡的在读博士，女博士，但是也在努力避免成为一朵奇葩。 由于作者没有打算推广这个网站，所以在上面有些心路历程，日常吐槽，学术心得啥的都有可能，如果有缘人能够发现这个网站，并且有什么话想对作者说，欢迎来邮：zuoxu.wang@gmail.com.">
+<meta property="og:description" content="TransE 模型笔记最近想follow一些关于Knowledge Graph Embedding（知识图谱嵌入，可以参考这篇综述[1]）的工作，而TransE模型[2]应该是这个工作的代表之一。 参考 http://sunzequn.com/index.php/archives/177/ 关于表示学习的前话http://nathanliuyolo.com/2017/12/09/TransE%E8">
 <meta property="og:locale" content="zh-Hans">
-<meta property="og:updated_time" content="2018-07-15T07:08:48.000Z">
+<meta property="og:updated_time" content="2018-07-16T09:14:50.000Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="网站说明和个人介绍">
-<meta name="twitter:description" content="个人介绍和网站说明Hello，我是该个人博客的作者，其实是个编程小白，所以能搭建好这个博客实属不易。 我是一个在新加坡的在读博士，女博士，但是也在努力避免成为一朵奇葩。 由于作者没有打算推广这个网站，所以在上面有些心路历程，日常吐槽，学术心得啥的都有可能，如果有缘人能够发现这个网站，并且有什么话想对作者说，欢迎来邮：zuoxu.wang@gmail.com.">
+<meta name="twitter:title" content="TransE">
+<meta name="twitter:description" content="TransE 模型笔记最近想follow一些关于Knowledge Graph Embedding（知识图谱嵌入，可以参考这篇综述[1]）的工作，而TransE模型[2]应该是这个工作的代表之一。 参考 http://sunzequn.com/index.php/archives/177/ 关于表示学习的前话http://nathanliuyolo.com/2017/12/09/TransE%E8">
 
 
 
 
 
 
-  <link rel="canonical" href="http://yoursite.com/2018/07/15/网站说明/"/>
+  <link rel="canonical" href="http://yoursite.com/2018/07/15/TransE/"/>
 
 
 
@@ -136,7 +136,7 @@
   };
 </script>
 
-  <title>网站说明和个人介绍 | Zoe Wang's studio</title>
+  <title>TransE | Zoe Wang's studio</title>
   
 
 
@@ -301,7 +301,7 @@
   
   
   <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2018/07/15/网站说明/">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2018/07/15/TransE/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="name" content="Zoe Wang">
@@ -318,7 +318,7 @@
 
         
         
-          <h1 class="post-title" itemprop="name headline">网站说明和个人介绍
+          <h1 class="post-title" itemprop="name headline">TransE
               
             
           </h1>
@@ -343,12 +343,24 @@
                 
               
 
-              <time title="Created: 2018-07-15 15:02:14 / Modified: 15:08:48" itemprop="dateCreated datePublished" datetime="2018-07-15T15:02:14+08:00">2018-07-15</time>
+              <time title="Created: 2018-07-15 20:43:36" itemprop="dateCreated datePublished" datetime="2018-07-15T20:43:36+08:00">2018-07-15</time>
             
 
             
               
 
+              
+                
+                <span class="post-meta-divider">|</span>
+                
+
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-calendar-check-o"></i>
+                </span>
+                
+                  <span class="post-meta-item-text">Edited on</span>
+                
+                <time title="Modified: 2018-07-16 17:14:50" itemprop="dateModified" datetime="2018-07-16T17:14:50+08:00">2018-07-16</time>
               
             
           </span>
@@ -365,7 +377,7 @@
                 <span class="post-meta-item-text">In</span>
               
               
-                <span itemprop="about" itemscope itemtype="http://schema.org/Thing"><a href="/categories/介绍/" itemprop="url" rel="index"><span itemprop="name">介绍</span></a></span>
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing"><a href="/categories/学术笔记/" itemprop="url" rel="index"><span itemprop="name">学术笔记</span></a></span>
 
                 
                 
@@ -399,9 +411,15 @@
       
 
       
-        <h2 id="个人介绍和网站说明"><a href="#个人介绍和网站说明" class="headerlink" title="个人介绍和网站说明"></a>个人介绍和网站说明</h2><p>Hello，我是该个人博客的作者，其实是个编程小白，所以能搭建好这个博客实属不易。</p>
-<p>我是一个在新加坡的在读博士，女博士，但是也在努力避免成为一朵奇葩。</p>
-<p>由于作者没有打算推广这个网站，所以在上面有些心路历程，日常吐槽，学术心得啥的都有可能，如果有缘人能够发现这个网站，并且有什么话想对作者说，欢迎来邮：<a href="mailto:zuoxu.wang@gmail.com" target="_blank" rel="noopener">zuoxu.wang@gmail.com</a>.</p>
+        <h2 id="TransE-模型笔记"><a href="#TransE-模型笔记" class="headerlink" title="TransE 模型笔记"></a>TransE 模型笔记</h2><p>最近想follow一些关于Knowledge Graph Embedding（知识图谱嵌入，可以参考这篇综述[1]）的工作，而TransE模型[2]应该是这个工作的代表之一。</p>
+<p>参考 <a href="http://sunzequn.com/index.php/archives/177/" target="_blank" rel="noopener">http://sunzequn.com/index.php/archives/177/</a></p>
+<h3 id="关于表示学习的前话"><a href="#关于表示学习的前话" class="headerlink" title="关于表示学习的前话"></a>关于表示学习的前话</h3><p><a href="http://nathanliuyolo.com/2017/12/09/TransE%E8%AE%BA%E6%96%87%E7%9F%A5%E8%AF%86%E6%80%BB%E7%BB%93/" target="_blank" rel="noopener">http://nathanliuyolo.com/2017/12/09/TransE%E8%AE%BA%E6%96%87%E7%9F%A5%E8%AF%86%E6%80%BB%E7%BB%93/</a></p>
+<p>​ 深度学习中最重要的作用就是表示学习，深度学习首先是学习特征，然后是学习分类，即所谓的端对端学习，所以深度学习很适合去解决像图像处理这种数据的”初始表示”与解决任务所需的”合适表示”相距甚远的问题。表示学习就是要将所研究对象的语义信息表示为稠密低纬实值向量，而在该低纬度空间中，两个对象距离越近则说明其语义相似度越高。</p>
+<p>​ 而且当处理这种在语义层面上难以表示的数据时，我们很难像特征工程那样人工去设计出合适的特征，而深度神经网络具有强大的建模以及知识抽取的能力，这种问题正是DNN大施拳脚的地方。</p>
+<p>​ 而最近入坑的也是本文所涉及的是知识表示学习，即面向知识库中的实体和关系进行表示学习。</p>
+<p>​ 本文主要是对最近阅读TransE模型提出的论文的知识总结，其他References见文末。</p>
+<p> 网络上已经存在了大量知识库（KBs），比如OpenCyc，WordNet，Freebase，Dbpedia等等。这些知识库是为了各种各样的目的建立的，因此很难用到其他系统上面。为了发挥知识库的图（graph）性，也为了得到统计学习（包括机器学习和深度学习）的优势，我们需要将知识库嵌入（embedding）到一个低维空间里（比如10、20、50维）。我们都知道，获得了向量后，就可以运用各种数学工具进行分析。深度学习的输入也是向量。（考虑一下，word2vec，我们训练出一个向量后，可以做好多事情，深度学习的输入也往往是一个矩阵。另可见：词嵌入的类比特性有实用意义吗？）。</p>
+<h3 id="简介"><a href="#简介" class="headerlink" title="简介"></a>简介</h3><h3 id="TransE-作用"><a href="#TransE-作用" class="headerlink" title="TransE 作用"></a>TransE 作用</h3><p>就是把三元组翻译成embedding词向量的方法</p>
 
       
     </div>
@@ -422,7 +440,9 @@
       
         <div class="post-tags">
           
-            <a href="/tags/介绍/" rel="tag"># 介绍</a>
+            <a href="/tags/学术笔记/" rel="tag"># 学术笔记</a>
+          
+            <a href="/tags/TransE/" rel="tag"># TransE</a>
           
         </div>
       
@@ -435,8 +455,8 @@
         <div class="post-nav">
           <div class="post-nav-next post-nav-item">
             
-              <a href="/2018/07/15/a-new-blog/" rel="next" title="a new blog">
-                <i class="fa fa-chevron-left"></i> a new blog
+              <a href="/2018/07/15/2018计划/" rel="next" title="2018计划">
+                <i class="fa fa-chevron-left"></i> 2018计划
               </a>
             
           </div>
@@ -445,8 +465,8 @@
 
           <div class="post-nav-prev post-nav-item">
             
-              <a href="/2018/07/15/2018计划/" rel="prev" title="2018计划">
-                2018计划 <i class="fa fa-chevron-right"></i>
+              <a href="/2018/07/16/活着读后感/" rel="prev" title="活着读后感">
+                活着读后感 <i class="fa fa-chevron-right"></i>
               </a>
             
           </div>
@@ -609,7 +629,7 @@
             
 
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#个人介绍和网站说明"><span class="nav-number">1.</span> <span class="nav-text">个人介绍和网站说明</span></a></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#TransE-模型笔记"><span class="nav-number">1.</span> <span class="nav-text">TransE 模型笔记</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#关于表示学习的前话"><span class="nav-number">1.1.</span> <span class="nav-text">关于表示学习的前话</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#简介"><span class="nav-number">1.2.</span> <span class="nav-text">简介</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#TransE-作用"><span class="nav-number">1.3.</span> <span class="nav-text">TransE 作用</span></a></li></ol></li></ol></div>
             
 
           </div>
