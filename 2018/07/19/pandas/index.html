@@ -108,25 +108,25 @@
 
 
 
-  <meta name="description" content="TransE 模型笔记最近想follow一些关于Knowledge Graph Embedding（知识图谱嵌入，可以参考这篇综述[1]）的工作，而TransE模型[2]应该是这个工作的代表之一。 参考 http://sunzequn.com/index.php/archives/177/ 关于表示学习的前话http://nathanliuyolo.com/2017/12/09/TransE%E8">
-<meta name="keywords" content="学术笔记,TransE">
+  <meta name="description" content="Pandas 学习笔记Lambda 表达式 （Lambda expression）简单来说，编程中提到的 lambda 表达式，通常是在需要一个函数，但是又不想费神去命名一个函数的场合下使用，也就是指匿名函数。这一用法跟所谓 λ 演算（题目说明里的维基链接）的关系，有点像原子弹和质能方程的关系，差别其实还是挺大的。 不谈形式化的 λ 演算，只说有实际用途的匿名函数。先举一个普通的 Python 例">
+<meta name="keywords" content="pandas">
 <meta property="og:type" content="article">
-<meta property="og:title" content="TransE">
-<meta property="og:url" content="http://yoursite.com/2018/07/15/TransE/index.html">
+<meta property="og:title" content="pandas">
+<meta property="og:url" content="http://yoursite.com/2018/07/19/pandas/index.html">
 <meta property="og:site_name" content="Zoe Wang&#39;s studio">
-<meta property="og:description" content="TransE 模型笔记最近想follow一些关于Knowledge Graph Embedding（知识图谱嵌入，可以参考这篇综述[1]）的工作，而TransE模型[2]应该是这个工作的代表之一。 参考 http://sunzequn.com/index.php/archives/177/ 关于表示学习的前话http://nathanliuyolo.com/2017/12/09/TransE%E8">
+<meta property="og:description" content="Pandas 学习笔记Lambda 表达式 （Lambda expression）简单来说，编程中提到的 lambda 表达式，通常是在需要一个函数，但是又不想费神去命名一个函数的场合下使用，也就是指匿名函数。这一用法跟所谓 λ 演算（题目说明里的维基链接）的关系，有点像原子弹和质能方程的关系，差别其实还是挺大的。 不谈形式化的 λ 演算，只说有实际用途的匿名函数。先举一个普通的 Python 例">
 <meta property="og:locale" content="zh-Hans">
-<meta property="og:updated_time" content="2018-07-17T02:05:17.000Z">
+<meta property="og:updated_time" content="2018-07-19T08:06:23.000Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="TransE">
-<meta name="twitter:description" content="TransE 模型笔记最近想follow一些关于Knowledge Graph Embedding（知识图谱嵌入，可以参考这篇综述[1]）的工作，而TransE模型[2]应该是这个工作的代表之一。 参考 http://sunzequn.com/index.php/archives/177/ 关于表示学习的前话http://nathanliuyolo.com/2017/12/09/TransE%E8">
+<meta name="twitter:title" content="pandas">
+<meta name="twitter:description" content="Pandas 学习笔记Lambda 表达式 （Lambda expression）简单来说，编程中提到的 lambda 表达式，通常是在需要一个函数，但是又不想费神去命名一个函数的场合下使用，也就是指匿名函数。这一用法跟所谓 λ 演算（题目说明里的维基链接）的关系，有点像原子弹和质能方程的关系，差别其实还是挺大的。 不谈形式化的 λ 演算，只说有实际用途的匿名函数。先举一个普通的 Python 例">
 
 
 
 
 
 
-  <link rel="canonical" href="http://yoursite.com/2018/07/15/TransE/"/>
+  <link rel="canonical" href="http://yoursite.com/2018/07/19/pandas/"/>
 
 
 
@@ -136,7 +136,7 @@
   };
 </script>
 
-  <title>TransE | Zoe Wang's studio</title>
+  <title>pandas | Zoe Wang's studio</title>
   
 
 
@@ -301,7 +301,7 @@
   
   
   <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2018/07/15/TransE/">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2018/07/19/pandas/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="name" content="Zoe Wang">
@@ -318,7 +318,7 @@
 
         
         
-          <h1 class="post-title" itemprop="name headline">TransE
+          <h1 class="post-title" itemprop="name headline">pandas
               
             
           </h1>
@@ -343,46 +343,16 @@
                 
               
 
-              <time title="Created: 2018-07-15 20:43:36" itemprop="dateCreated datePublished" datetime="2018-07-15T20:43:36+08:00">2018-07-15</time>
+              <time title="Created: 2018-07-19 15:51:35 / Modified: 16:06:23" itemprop="dateCreated datePublished" datetime="2018-07-19T15:51:35+08:00">2018-07-19</time>
             
 
             
               
 
-              
-                
-                <span class="post-meta-divider">|</span>
-                
-
-                <span class="post-meta-item-icon">
-                  <i class="fa fa-calendar-check-o"></i>
-                </span>
-                
-                  <span class="post-meta-item-text">Edited on</span>
-                
-                <time title="Modified: 2018-07-17 10:05:17" itemprop="dateModified" datetime="2018-07-17T10:05:17+08:00">2018-07-17</time>
               
             
           </span>
 
-          
-            <span class="post-category" >
-            
-              <span class="post-meta-divider">|</span>
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-folder-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">In</span>
-              
-              
-                <span itemprop="about" itemscope itemtype="http://schema.org/Thing"><a href="/categories/学术笔记/" itemprop="url" rel="index"><span itemprop="name">学术笔记</span></a></span>
-
-                
-                
-              
-            </span>
           
 
           
@@ -411,17 +381,31 @@
       
 
       
-        <h2 id="TransE-模型笔记"><a href="#TransE-模型笔记" class="headerlink" title="TransE 模型笔记"></a>TransE 模型笔记</h2><p>最近想follow一些关于Knowledge Graph Embedding（知识图谱嵌入，可以参考这篇综述[1]）的工作，而TransE模型[2]应该是这个工作的代表之一。</p>
-<p>参考 <a href="http://sunzequn.com/index.php/archives/177/" target="_blank" rel="noopener">http://sunzequn.com/index.php/archives/177/</a></p>
-<h3 id="关于表示学习的前话"><a href="#关于表示学习的前话" class="headerlink" title="关于表示学习的前话"></a>关于表示学习的前话</h3><p><a href="http://nathanliuyolo.com/2017/12/09/TransE%E8%AE%BA%E6%96%87%E7%9F%A5%E8%AF%86%E6%80%BB%E7%BB%93/" target="_blank" rel="noopener">http://nathanliuyolo.com/2017/12/09/TransE%E8%AE%BA%E6%96%87%E7%9F%A5%E8%AF%86%E6%80%BB%E7%BB%93/</a></p>
-<p>​ 深度学习中最重要的作用就是表示学习，深度学习首先是学习特征，然后是学习分类，即所谓的端对端学习，所以深度学习很适合去解决像图像处理这种数据的”初始表示”与解决任务所需的”合适表示”相距甚远的问题。表示学习就是要将所研究对象的语义信息表示为稠密低纬实值向量，而在该低纬度空间中，两个对象距离越近则说明其语义相似度越高。</p>
-<p>​ 而且当处理这种在语义层面上难以表示的数据时，我们很难像特征工程那样人工去设计出合适的特征，而深度神经网络具有强大的建模以及知识抽取的能力，这种问题正是DNN大施拳脚的地方。</p>
-<p>​ 而最近入坑的也是本文所涉及的是知识表示学习，即面向知识库中的实体和关系进行表示学习。</p>
-<p>​ 本文主要是对最近阅读TransE模型提出的论文的知识总结，其他References见文末。</p>
-<p> 网络上已经存在了大量知识库（KBs），比如OpenCyc，WordNet，Freebase，Dbpedia等等。这些知识库是为了各种各样的目的建立的，因此很难用到其他系统上面。为了发挥知识库的图（graph）性，也为了得到统计学习（包括机器学习和深度学习）的优势，我们需要将知识库嵌入（embedding）到一个低维空间里（比如10、20、50维）。我们都知道，获得了向量后，就可以运用各种数学工具进行分析。深度学习的输入也是向量。（考虑一下，word2vec，我们训练出一个向量后，可以做好多事情，深度学习的输入也往往是一个矩阵。另可见：词嵌入的类比特性有实用意义吗？）。</p>
-<h3 id="简介"><a href="#简介" class="headerlink" title="简介"></a>简介</h3><p><a href="http://sunzequn.com/index.php/archives/177/" target="_blank" rel="noopener">http://sunzequn.com/index.php/archives/177/</a></p>
-<h3 id="TransE-作用"><a href="#TransE-作用" class="headerlink" title="TransE 作用"></a>TransE 作用</h3><p>就是把三元组翻译成embedding词向量的方法</p>
-<h3 id="论文内容"><a href="#论文内容" class="headerlink" title="论文内容"></a>论文内容</h3><p><a href="http://nathanliuyolo.com/2017/12/09/TransE%E8%AE%BA%E6%96%87%E7%9F%A5%E8%AF%86%E6%80%BB%E7%BB%93/" target="_blank" rel="noopener">http://nathanliuyolo.com/2017/12/09/TransE%E8%AE%BA%E6%96%87%E7%9F%A5%E8%AF%86%E6%80%BB%E7%BB%93/</a></p>
+        <h2 id="Pandas-学习笔记"><a href="#Pandas-学习笔记" class="headerlink" title="Pandas 学习笔记"></a>Pandas 学习笔记</h2><h3 id="Lambda-表达式-（Lambda-expression）"><a href="#Lambda-表达式-（Lambda-expression）" class="headerlink" title="Lambda 表达式 （Lambda expression）"></a>Lambda 表达式 （Lambda expression）</h3><p>简单来说，编程中提到的 <strong>lambda 表达式</strong>，通常是在<strong>需要一个函数，但是又不想费神去命名一个函数的场合下使用，也就是指匿名函数</strong>。这一用法跟所谓 λ 演算（题目说明里的维基链接）的关系，有点像原子弹和质能方程的关系，差别其实还是挺大的。</p>
+<p>不谈形式化的 λ 演算，只说有实际用途的匿名函数。先举一个普通的 Python 例子：将一个 list 里的每个元素都平方：</p>
+<blockquote>
+<p>map( lambda x: x*x, [y for y in range(10)] )</p>
+</blockquote>
+<p>这个写法要好过</p>
+<blockquote>
+<p>def sq(x):<br>return x * x<br>map(sq, [y for y in range(10)])</p>
+</blockquote>
+<p>，因为后者多定义了一个（污染环境的）函数，尤其如果这个函数只会使用一次的话。而且第一种写法实际上更易读，因为那个映射到列表上的函数具体是要做什么，非常一目了然。如果你仔细观察自己的代码，会发现这种场景其实很常见：你在某处就真的只需要一个能做一件事情的函数而已，连它叫什么名字都无关紧要。Lambda 表达式就可以用来做这件事。</p>
+<p>进一步讲，匿名函数本质上就是一个函数，它所抽象出来的东西是一组运算。这是什么意思呢？类比</p>
+<blockquote>
+<p>a = [1, 2, 3]<br>和<br>f = lambda x : x + 1</p>
+</blockquote>
+<p>，你会发现，等号右边的东西完全可以脱离等号左边的东西而存在，等号左边的名字只是右边之实体的标识符。如果你能习惯 [1, 2, 3] 单独存在，那么 lambda x : x + 1 也能单独存在其实也就不难理解了，它的意义就是给「某个数加一」这一运算本身。</p>
+<p>现在回头来看 map() 函数，它可以将一个函数映射到一个可枚举类型上面。沿用上面给出的 a 和 f，可以写：</p>
+<blockquote>
+<p>map(f, a)</p>
+</blockquote>
+<p>也就是将函数 f 依次套用在 a 的每一个元素上面，获得结果 [2, 3, 4]。现在用 lambda 表达式来替换 f，就变成：</p>
+<blockquote>
+<p>map( lambda x : x + 1, [1, 2, 3] )<br>会不会觉得现在很一目了然了？尤其是类比<br>a = [1, 2, 3]<br>r = []<br>for each in a:<br>  r.append(each+1)</p>
+</blockquote>
+<p>这样的写法时，你会发现自己如果能将「遍历列表，给遇到的每个元素都做某种运算」的过程从一个循环里抽象出来成为一个函数 map，然后用 lambda 表达式将这种运算作为参数传给 map 的话，考虑事情的思维层级会高出一些来，需要顾及的细节也少了一点。Python 之中，类似能用到 lambda 表达式的「高级」函数还有 reduce、filter 等等，很多语言也都有这样的工具（不过这些特性最好不要在 Python 中用太多，原因详见 <a href="http://www.zhihu.com/question/19794855/answer/12987428" target="_blank" rel="noopener">http://www.zhihu.com/question/19794855/answer/12987428</a> 的评论部分）。这种能够接受一个函数作为参数的函数叫做「高阶函数」（higher-order function），是来自函数式编程（functional programming）的思想。和其他很多语言相比，Python 的 lambda 限制多多，最严重的当属它只能由一条表达式组成。这个限制主要是为了防止滥用，因为当人们发觉 lambda 很方便，就比较容易滥用，可是用多了会让程序看起来不那么清晰，毕竟每个人对于抽象层级的忍耐 / 理解程度都有所不同。</p>
+<p>作者：涛吴<br>链接：<a href="https://www.zhihu.com/question/20125256/answer/14058285" target="_blank" rel="noopener">https://www.zhihu.com/question/20125256/answer/14058285</a><br>来源：知乎<br>著作权归作者所有。商业转载请联系作者获得授权，非商业转载请注明出处。</p>
 
       
     </div>
@@ -442,9 +426,7 @@
       
         <div class="post-tags">
           
-            <a href="/tags/学术笔记/" rel="tag"># 学术笔记</a>
-          
-            <a href="/tags/TransE/" rel="tag"># TransE</a>
+            <a href="/tags/pandas/" rel="tag"># pandas</a>
           
         </div>
       
@@ -457,8 +439,8 @@
         <div class="post-nav">
           <div class="post-nav-next post-nav-item">
             
-              <a href="/2018/07/15/2018计划/" rel="next" title="2018计划">
-                <i class="fa fa-chevron-left"></i> 2018计划
+              <a href="/2018/07/18/new-orient/" rel="next" title="new_orient">
+                <i class="fa fa-chevron-left"></i> new_orient
               </a>
             
           </div>
@@ -466,10 +448,6 @@
           <span class="post-nav-divider"></span>
 
           <div class="post-nav-prev post-nav-item">
-            
-              <a href="/2018/07/16/活着读后感/" rel="prev" title="活着读后感">
-                活着读后感 <i class="fa fa-chevron-right"></i>
-              </a>
             
           </div>
         </div>
@@ -637,7 +615,7 @@
             
 
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#TransE-模型笔记"><span class="nav-number">1.</span> <span class="nav-text">TransE 模型笔记</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#关于表示学习的前话"><span class="nav-number">1.1.</span> <span class="nav-text">关于表示学习的前话</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#简介"><span class="nav-number">1.2.</span> <span class="nav-text">简介</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#TransE-作用"><span class="nav-number">1.3.</span> <span class="nav-text">TransE 作用</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#论文内容"><span class="nav-number">1.4.</span> <span class="nav-text">论文内容</span></a></li></ol></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#Pandas-学习笔记"><span class="nav-number">1.</span> <span class="nav-text">Pandas 学习笔记</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#Lambda-表达式-（Lambda-expression）"><span class="nav-number">1.1.</span> <span class="nav-text">Lambda 表达式 （Lambda expression）</span></a></li></ol></li></ol></div>
             
 
           </div>

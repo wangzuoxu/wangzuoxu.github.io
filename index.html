@@ -300,6 +300,170 @@
   
   
   <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2018/07/19/pandas/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="Zoe Wang">
+      <meta itemprop="description" content="博士的围城-新加坡在读博士生">
+      <meta itemprop="image" content="/images/avatar.gif">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="Zoe Wang's studio">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+                
+                <a class="post-title-link" href="/2018/07/19/pandas/" itemprop="url">
+                  pandas
+                </a>
+              
+            
+          </h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+
+            
+            
+            
+
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">Posted on</span>
+              
+
+              
+                
+              
+
+              <time title="Created: 2018-07-19 15:51:35 / Modified: 16:06:23" itemprop="dateCreated datePublished" datetime="2018-07-19T15:51:35+08:00">2018-07-19</time>
+            
+
+            
+              
+
+              
+            
+          </span>
+
+          
+
+          
+            
+          
+
+          
+          
+
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        
+          
+            <h2 id="Pandas-学习笔记"><a href="#Pandas-学习笔记" class="headerlink" title="Pandas 学习笔记"></a>Pandas 学习笔记</h2><h3 id="Lambda-表达式-（Lambda-expression）"><a href="#Lambda-表达式-（Lambda-expression）" class="headerlink" title="Lambda 表达式 （Lambda expression）"></a>Lambda 表达式 （Lambda expression）</h3><p>简单来说，编程中提到的 <strong>lambda 表达式</strong>，通常是在<strong>需要一个函数，但是又不想费神去命名一个函数的场合下使用，也就是指匿名函数</strong>。这一用法跟所谓 λ 演算（题目说明里的维基链接）的关系，有点像原子弹和质能方程的关系，差别其实还是挺大的。</p>
+<p>不谈形式化的 λ 演算，只说有实际用途的匿名函数。先举一个普通的 Python 例子：将一个 list 里的每个元素都平方：</p>
+<blockquote>
+<p>map( lambda x: x*x, [y for y in range(10)] )</p>
+</blockquote>
+<p>这个写法要好过</p>
+<blockquote>
+<p>def sq(x):<br>return x * x<br>map(sq, [y for y in range(10)])</p>
+</blockquote>
+<p>，因为后者多定义了一个（污染环境的）函数，尤其如果这个函数只会使用一次的话。而且第一种写法实际上更易读，因为那个映射到列表上的函数具体是要做什么，非常一目了然。如果你仔细观察自己的代码，会发现这种场景其实很常见：你在某处就真的只需要一个能做一件事情的函数而已，连它叫什么名字都无关紧要。Lambda 表达式就可以用来做这件事。</p>
+<p>进一步讲，匿名函数本质上就是一个函数，它所抽象出来的东西是一组运算。这是什么意思呢？类比</p>
+<blockquote>
+<p>a = [1, 2, 3]<br>和<br>f = lambda x : x + 1</p>
+</blockquote>
+<p>，你会发现，等号右边的东西完全可以脱离等号左边的东西而存在，等号左边的名字只是右边之实体的标识符。如果你能习惯 [1, 2, 3] 单独存在，那么 lambda x : x + 1 也能单独存在其实也就不难理解了，它的意义就是给「某个数加一」这一运算本身。</p>
+<p>现在回头来看 map() 函数，它可以将一个函数映射到一个可枚举类型上面。沿用上面给出的 a 和 f，可以写：</p>
+<blockquote>
+<p>map(f, a)</p>
+</blockquote>
+<p>也就是将函数 f 依次套用在 a 的每一个元素上面，获得结果 [2, 3, 4]。现在用 lambda 表达式来替换 f，就变成：</p>
+<blockquote>
+<p>map( lambda x : x + 1, [1, 2, 3] )<br>会不会觉得现在很一目了然了？尤其是类比<br>a = [1, 2, 3]<br>r = []<br>for each in a:<br>  r.append(each+1)</p>
+</blockquote>
+<p>这样的写法时，你会发现自己如果能将「遍历列表，给遇到的每个元素都做某种运算」的过程从一个循环里抽象出来成为一个函数 map，然后用 lambda 表达式将这种运算作为参数传给 map 的话，考虑事情的思维层级会高出一些来，需要顾及的细节也少了一点。Python 之中，类似能用到 lambda 表达式的「高级」函数还有 reduce、filter 等等，很多语言也都有这样的工具（不过这些特性最好不要在 Python 中用太多，原因详见 <a href="http://www.zhihu.com/question/19794855/answer/12987428" target="_blank" rel="noopener">http://www.zhihu.com/question/19794855/answer/12987428</a> 的评论部分）。这种能够接受一个函数作为参数的函数叫做「高阶函数」（higher-order function），是来自函数式编程（functional programming）的思想。和其他很多语言相比，Python 的 lambda 限制多多，最严重的当属它只能由一条表达式组成。这个限制主要是为了防止滥用，因为当人们发觉 lambda 很方便，就比较容易滥用，可是用多了会让程序看起来不那么清晰，毕竟每个人对于抽象层级的忍耐 / 理解程度都有所不同。</p>
+<p>作者：涛吴<br>链接：<a href="https://www.zhihu.com/question/20125256/answer/14058285" target="_blank" rel="noopener">https://www.zhihu.com/question/20125256/answer/14058285</a><br>来源：知乎<br>著作权归作者所有。商业转载请联系作者获得授权，非商业转载请注明出处。</p>
+
+          
+        
+      
+    </div>
+
+    
+
+    
+    
+    
+
+    
+
+    
+
+    
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
+    
+      
+
+  
+
+  
+  
+  
+
+  
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
     <link itemprop="mainEntityOfPage" href="http://yoursite.com/2018/07/18/new-orient/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
@@ -503,7 +667,7 @@
                 
                   <span class="post-meta-item-text">Edited on</span>
                 
-                <time title="Modified: 2018-07-17 21:23:58" itemprop="dateModified" datetime="2018-07-17T21:23:58+08:00">2018-07-17</time>
+                <time title="Modified: 2018-07-19 17:19:20" itemprop="dateModified" datetime="2018-07-19T17:19:20+08:00">2018-07-19</time>
               
             
           </span>
@@ -538,7 +702,7 @@
       
         
           
-            <h2 id="tensorflow-读书笔记"><a href="#tensorflow-读书笔记" class="headerlink" title="tensorflow 读书笔记"></a>tensorflow 读书笔记</h2><h3 id="基本概念"><a href="#基本概念" class="headerlink" title="基本概念"></a>基本概念</h3><p>使用TensorFlow前必须明白的基本概念： </p>
+            <h1 id="tensorflow-读书笔记"><a href="#tensorflow-读书笔记" class="headerlink" title="tensorflow 读书笔记"></a>tensorflow 读书笔记</h1><h3 id="基本概念"><a href="#基本概念" class="headerlink" title="基本概念"></a>基本概念</h3><p>使用TensorFlow前必须明白的基本概念： </p>
 <ul>
 <li>图（Graph）：图描述了计算的过程，TensorFlow使用图来表示计算任务。 </li>
 <li>张量（Tensor）：TensorFlow使用tensor表示数据。每个Tensor是一个类型化的多维数组。 </li>
@@ -649,7 +813,29 @@
 <h5 id="证明多元函数沿其负梯度方向下降最快"><a href="#证明多元函数沿其负梯度方向下降最快" class="headerlink" title="证明多元函数沿其负梯度方向下降最快"></a><strong>证明多元函数沿其负梯度方向下降最快</strong></h5><p><img src="https://i.loli.net/2018/07/17/5b4dedad39d6c.png" alt="verifyGradient.png"></p>
 <h5 id="降低损失：随机梯度下降法"><a href="#降低损失：随机梯度下降法" class="headerlink" title="降低损失：随机梯度下降法"></a>降低损失：随机梯度下降法</h5><p>在梯度下降法中，批量指的是用于在单次迭代中计算梯度的样本总数。</p>
 <p>包含随机抽样样本的大型数据集可能包含冗余数据。实际上，批量大小越大，出现冗余的可能性就越高。一些冗余可能有助于消除杂乱的梯度，但超大批量所具备的预测价值往往并不比大型批量高。</p>
-
+<h3 id="使用tensorflow的基本步骤"><a href="#使用tensorflow的基本步骤" class="headerlink" title="使用tensorflow的基本步骤"></a>使用tensorflow的基本步骤</h3><p><a href="https://colab.research.google.com/notebooks/mlcc/first_steps_with_tensor_flow.ipynb?hl=zh-cn#scrollTo=6TjLjL9IU80G" target="_blank" rel="noopener">https://colab.research.google.com/notebooks/mlcc/first_steps_with_tensor_flow.ipynb?hl=zh-cn#scrollTo=6TjLjL9IU80G</a></p>
+<h4 id="学习目标："><a href="#学习目标：" class="headerlink" title="学习目标："></a>学习目标：</h4><ul>
+<li>学习基本的 TensorFlow 概念<ul>
+<li>在 TensorFlow 中使用<strong>LinearRegressor（线性回归类）</strong>并基于单个输入特征预测各城市街区的房屋价值中位数</li>
+<li>使用<strong>均方根误差 (RMSE)</strong>评估模型预测的准确率</li>
+<li>通过调整模型的超参数提高模型准确率</li>
+</ul>
+</li>
+</ul>
+<p>数据基于加利福尼亚州 1990 年的人口普查数据。</p>
+<h4 id="设置"><a href="#设置" class="headerlink" title="设置"></a>设置</h4><p>在此第一个单元格中，我们将加载必要的库。接下来，我们将加载数据集。</p>
+<h4 id="检查数据"><a href="#检查数据" class="headerlink" title="检查数据"></a>检查数据</h4><p>建议您在使用数据之前，先对它有一个初步的了解。</p>
+<p>我们会输出关于各列的一些实用统计信息快速摘要：样本数、均值、标准偏差、最大值、最小值和各种分位数。</p>
+<h4 id="构建第一个模型"><a href="#构建第一个模型" class="headerlink" title="构建第一个模型"></a>构建第一个模型</h4><h5 id="第-1-步：定义特征并配置特征列"><a href="#第-1-步：定义特征并配置特征列" class="headerlink" title="第 1 步：定义特征并配置特征列"></a>第 1 步：定义特征并配置特征列</h5><p>为了将我们的训练数据导入 TensorFlow，我们需要指定每个特征包含的数据类型。在本练习及今后的练习中，我们主要会使用以下两类数据：</p>
+<ul>
+<li><p>分类数据：一种文字数据。在本练习中，我们的住房数据集不包含任何分类特征，但您可能会看到的示例包括家居风格以及房地产广告词。</p>
+</li>
+<li><p>数值数据：一种数字（整数或浮点数）数据以及您希望视为数字的数据。有时您可能会希望将数值数据（例如邮政编码）视为分类数据（我们将在稍后的部分对此进行详细说明）。</p>
+</li>
+</ul>
+<p>在 TensorFlow 中，我们使用一种称为“<strong>特征列</strong>”的结构来表示特征的数据类型。<strong>特征列仅存储对特征数据的描述；不包含特征数据本身。</strong></p>
+<p>一开始，我们只使用一个数值输入特征 total_rooms。以下代码会从 california_housing_dataframe 中提取 total_rooms 数据，并使用 numeric_column 定义特征列，这样会将其数据指定为数值：<br><figure class="highlight plain"><figcaption><span>Define the input feature: total_rooms.</span></figcaption><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">my_feature = california_housing_dataframe[[&quot;total_rooms&quot;]]</span><br><span class="line"></span><br><span class="line"># Configure a numeric feature column for total_rooms.</span><br><span class="line">feature_columns = [tf.feature_column.numeric_column(&quot;total_rooms&quot;)]</span><br></pre></td></tr></table></figure></p>
+<h5 id="第-2-步：定义目标"><a href="#第-2-步：定义目标" class="headerlink" title="第 2 步：定义目标"></a>第 2 步：定义目标</h5><h5 id="第-3-步：配置-LinearRegressor"><a href="#第-3-步：配置-LinearRegressor" class="headerlink" title="第 3 步：配置 LinearRegressor"></a>第 3 步：配置 LinearRegressor</h5><h5 id="第-4-步：定义输入函数"><a href="#第-4-步：定义输入函数" class="headerlink" title="第 4 步：定义输入函数"></a>第 4 步：定义输入函数</h5>
           
         
       
@@ -1105,7 +1291,7 @@
                 
                   <span class="post-meta-item-text">Edited on</span>
                 
-                <time title="Modified: 2018-07-16 23:57:41" itemprop="dateModified" datetime="2018-07-16T23:57:41+08:00">2018-07-16</time>
+                <time title="Modified: 2018-07-19 23:33:55" itemprop="dateModified" datetime="2018-07-19T23:33:55+08:00">2018-07-19</time>
               
             
           </span>
@@ -1166,10 +1352,11 @@
 <li><strong>data science </strong></li>
 </ul>
 <p>地点：国内或新加坡</p>
-<h2 id="研究计划"><a href="#研究计划" class="headerlink" title="研究计划"></a>研究计划</h2><ol>
+<h3 id="研究计划"><a href="#研究计划" class="headerlink" title="研究计划"></a>研究计划</h3><ol>
 <li>了解 TransE算法</li>
 <li>学习tensorflow  <a href="https://www.tensorflow.org/get_started/?hl=zh-cn" target="_blank" rel="noopener">https://www.tensorflow.org/get_started/?hl=zh-cn</a></li>
 </ol>
+<h3 id="生活计划"><a href="#生活计划" class="headerlink" title="生活计划"></a>生活计划</h3><p>优秀的人只是因为他们有优秀的习惯！ 所以要养成优秀的习惯。</p>
 
           
         
@@ -1569,7 +1756,7 @@
                 
                   <a href="/archives/">
                 
-                    <span class="site-state-item-count">7</span>
+                    <span class="site-state-item-count">8</span>
                     <span class="site-state-item-name">posts</span>
                   </a>
                 </div>
@@ -1625,7 +1812,9 @@
                     
                       
                     
-                    <span class="site-state-item-count">10</span>
+                      
+                    
+                    <span class="site-state-item-count">11</span>
                     <span class="site-state-item-name">tags</span>
                   </a>
                 </div>
