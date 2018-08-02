@@ -127,7 +127,7 @@
 <meta property="og:image" content="https://i.loli.net/2018/07/17/5b4de218e9595.png">
 <meta property="og:image" content="https://i.loli.net/2018/07/17/5b4de218df282.png">
 <meta property="og:image" content="https://i.loli.net/2018/07/17/5b4dedad39d6c.png">
-<meta property="og:updated_time" content="2018-07-19T09:19:20.000Z">
+<meta property="og:updated_time" content="2018-07-20T03:21:20.000Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="tensorflow">
 <meta name="twitter:description" content="tensorflow 读书笔记基本概念使用TensorFlow前必须明白的基本概念：   图（Graph）：图描述了计算的过程，TensorFlow使用图来表示计算任务。  张量（Tensor）：TensorFlow使用tensor表示数据。每个Tensor是一个类型化的多维数组。  操作（op）：图中的节点被称为op（operation的缩写），一个op获得0个或多个Tensor，执行计算，产生">
@@ -372,7 +372,7 @@
                 
                   <span class="post-meta-item-text">Edited on</span>
                 
-                <time title="Modified: 2018-07-19 17:19:20" itemprop="dateModified" datetime="2018-07-19T17:19:20+08:00">2018-07-19</time>
+                <time title="Modified: 2018-07-20 11:21:20" itemprop="dateModified" datetime="2018-07-20T11:21:20+08:00">2018-07-20</time>
               
             
           </span>
@@ -538,7 +538,9 @@
 </ul>
 <p>在 TensorFlow 中，我们使用一种称为“<strong>特征列</strong>”的结构来表示特征的数据类型。<strong>特征列仅存储对特征数据的描述；不包含特征数据本身。</strong></p>
 <p>一开始，我们只使用一个数值输入特征 total_rooms。以下代码会从 california_housing_dataframe 中提取 total_rooms 数据，并使用 numeric_column 定义特征列，这样会将其数据指定为数值：<br><figure class="highlight plain"><figcaption><span>Define the input feature: total_rooms.</span></figcaption><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">my_feature = california_housing_dataframe[[&quot;total_rooms&quot;]]</span><br><span class="line"></span><br><span class="line"># Configure a numeric feature column for total_rooms.</span><br><span class="line">feature_columns = [tf.feature_column.numeric_column(&quot;total_rooms&quot;)]</span><br></pre></td></tr></table></figure></p>
-<h5 id="第-2-步：定义目标"><a href="#第-2-步：定义目标" class="headerlink" title="第 2 步：定义目标"></a>第 2 步：定义目标</h5><h5 id="第-3-步：配置-LinearRegressor"><a href="#第-3-步：配置-LinearRegressor" class="headerlink" title="第 3 步：配置 LinearRegressor"></a>第 3 步：配置 LinearRegressor</h5><h5 id="第-4-步：定义输入函数"><a href="#第-4-步：定义输入函数" class="headerlink" title="第 4 步：定义输入函数"></a>第 4 步：定义输入函数</h5>
+<h5 id="第-2-步：定义目标"><a href="#第-2-步：定义目标" class="headerlink" title="第 2 步：定义目标"></a>第 2 步：定义目标</h5><p>接下来，我们将定义目标，也就是 median_house_value。同样，我们可以从 california_housing_dataframe 中提取它：</p>
+<figure class="highlight plain"><figcaption><span>Define the label.</span></figcaption><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">targets = california_housing_dataframe[&quot;median_house_value&quot;]</span><br></pre></td></tr></table></figure>
+<h5 id="第-3-步：配置-LinearRegressor"><a href="#第-3-步：配置-LinearRegressor" class="headerlink" title="第 3 步：配置 LinearRegressor"></a>第 3 步：配置 LinearRegressor</h5><h5 id="第-4-步：定义输入函数"><a href="#第-4-步：定义输入函数" class="headerlink" title="第 4 步：定义输入函数"></a>第 4 步：定义输入函数</h5>
       
     </div>
 
@@ -657,7 +659,7 @@
                 
                   <a href="/archives/">
                 
-                    <span class="site-state-item-count">8</span>
+                    <span class="site-state-item-count">9</span>
                     <span class="site-state-item-name">posts</span>
                   </a>
                 </div>
@@ -715,7 +717,9 @@
                     
                       
                     
-                    <span class="site-state-item-count">11</span>
+                      
+                    
+                    <span class="site-state-item-count">12</span>
                     <span class="site-state-item-name">tags</span>
                   </a>
                 </div>
