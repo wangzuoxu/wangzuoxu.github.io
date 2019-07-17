@@ -1,1 +1,0 @@
-var currentScrollHeight=window.pageYOffset,scrollOffset=0;window.onscroll=function(e){scrollOffset=window.pageYOffset-currentScrollHeight,currentScrollHeight=window.pageYOffset,0<scrollOffset?document.querySelector(".site-header").classList.add("header-hidden"):document.querySelector(".site-header").classList.remove("header-hidden")};
