@@ -69,3 +69,18 @@ npm run build
 - `GET /api/publications`
 
 前端模板只要改数据来源即可，不必重写页面结构。
+
+## Adding papers later
+
+When you add a new paper, update `data/publications.json` with:
+
+- `year`
+- `title`
+- `journal`
+- `volume`
+- `pages`
+- `kind`
+- `doi` for the DOI link
+- `pdf` for the PDF path, for example `papers/your-paper.pdf`
+
+If the PDF is already in `papers/`, just point `pdf` to that file and it will show up as a clickable link on the homepage.
