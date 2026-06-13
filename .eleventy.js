@@ -1,5 +1,6 @@
 module.exports = function (eleventyConfig) {
   eleventyConfig.addPassthroughCopy({ "styles.css": "styles.css" });
+  eleventyConfig.addPassthroughCopy({ "scrollspy.js": "scrollspy.js" });
   eleventyConfig.addPassthroughCopy({ papers: "papers" });
 
   return {
