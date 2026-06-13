@@ -4,8 +4,7 @@
   "hero": {
     "eyebrow": "Academic Homepage",
     "name": "王佐旭",
-    "subtitle": "北京航空航天大学 · 机械工程及自动化学院",
-    "affiliation": "研究聚焦制造与服务知识管理、复杂产品设计、AI 驱动的设计方法、多模态知识抽取与推荐，以及智能产品设计系统。",
+    "affiliation": "北京航空航天大学 · 机械工程及自动化学院",
     "summary": "目前主要从事复杂产品创新设计、制造知识工程、知识图谱与大模型融合、以及面向工程场景的智能设计辅助系统研究。",
     "nav": [
       { "label": "教育", "href": "#education" },
@@ -36,8 +35,7 @@
         },
         {
           "meta": "2012.09 - 2016.07",
-          "title": "学士，天津大学机械学院工业设计专业",
-          "text": "接受工业设计、产品设计与工程设计方法训练。"
+          "title": "学士，天津大学机械学院工业设计"
         }
       ]
     },
@@ -47,14 +45,16 @@
       "title": "工作经历",
       "items": [
         {
-          "meta": "2022.01 - 至今",
-          "title": "助理教授，北京航空航天大学机械工程及自动化学院",
-          "text": "开展智能设计、知识图谱与多模态工程知识管理方向的研究与教学。"
+          "meta": "2026.01 - 至今",
+          "title": "副教授，北京航空航天大学机械工程及自动化学院"
+        },
+        {
+          "meta": "2022.01 - 2025.12",
+          "title": "助理教授，北京航空航天大学机械工程及自动化学院"
         },
         {
           "meta": "2021.03 - 2022.01",
-          "title": "研究助理，香港理工大学 RAIDS 研究组",
-          "text": "参与工业数字化服务化、设计知识管理与智能制造相关课题研究。"
+          "title": "研究助理，香港理工大学 RAIDS 研究组"
         }
       ]
     },
@@ -127,7 +127,7 @@
     "patents": {
       "id": "patents",
       "index": "06",
-      "title": "专利和软著内容",
+      "title": "专利和软著",
       "panels": [
         {
           "title": "已公开专利",
@@ -139,7 +139,7 @@
           ]
         },
         {
-          "title": "软著与软件成果",
+          "title": "软著",
           "items": [
             "/",
             "/"
@@ -185,6 +185,8 @@
         {
           "title": "学术服务",
           "items": [
+            "中国图学学会数字化设计与制造专业委员会委员。",
+            "中国人类功效学管理工效学专业委员会委员。",
             "Journal of Engineering Design 期刊编委。",
             "Advanced Engineering Informatics 2022、2023、2024 优秀审稿人。",
             "多本 SCI 期刊活跃审稿人，包括 Advanced Engineering Informatics、Journal of Manufacturing Systems、Journal of Cleaner Production、Computer in Industry、Journal of Computing and Information Science in Engineering。"
