@@ -25,6 +25,7 @@ body {
   color: var(--text);
   background: var(--bg);
   font-family: "Inter", system-ui, sans-serif;
+  padding-top: 74px;
 }
 
 a {
@@ -42,6 +43,30 @@ a:hover {
   padding: 24px 0 48px;
   display: grid;
   gap: 18px;
+}
+
+.site-header {
+  position: fixed;
+  top: 0;
+  inset-inline: 0;
+  z-index: 1000;
+  background: rgba(245, 243, 238, 0.92);
+  backdrop-filter: blur(14px);
+  border-bottom: 1px solid rgba(21, 21, 21, 0.08);
+}
+
+.site-header-inner {
+  width: min(var(--content-width), calc(100% - 32px));
+  margin: 0 auto;
+  min-height: 74px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 20px;
+}
+
+.brand-link {
+  color: inherit;
 }
 
 .hero {
@@ -442,6 +467,27 @@ h1 {
 }
 
 @media (max-width: 720px) {
+  body {
+    padding-top: 86px;
+  }
+
+  .site-header-inner {
+    min-height: 86px;
+    width: min(100% - 24px, var(--content-width));
+    display: grid;
+    gap: 10px;
+    align-content: center;
+  }
+
+  .site-header {
+    padding: 6px 0;
+  }
+
+  .nav-links {
+    flex-wrap: wrap;
+    gap: 10px 14px;
+  }
+
   .page {
     width: min(100% - 24px, var(--content-width));
     padding-top: 18px;

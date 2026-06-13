@@ -8,6 +8,19 @@
     <link rel="stylesheet" href="{{ '/styles.css' | url }}" />
   </head>
   <body>
+    <header class="site-header">
+      <div class="site-header-inner">
+        <a class="brand brand-link" href="{{ '/' | url }}">
+          <span class="brand-mark"></span>
+          <span>{{ site.brand }}</span>
+        </a>
+        <nav class="nav-links" aria-label="主导航">
+          {% for item in site.hero.nav %}
+            <a href="{{ item.href }}">{{ item.label }}</a>
+          {% endfor %}
+        </nav>
+      </div>
+    </header>
     {{ content | safe }}
   </body>
 </html>

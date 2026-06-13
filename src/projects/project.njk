@@ -11,15 +11,8 @@ eleventyComputed:
 ---
 <main class="page project-page">
   <section class="hero project-hero">
-    <div class="topnav">
-      <div class="brand">
-        <span class="brand-mark"></span>
-        <a href="{{ '/' | url }}">{{ site.brand }}</a>
-      </div>
-      <a class="back-link" href="{{ '/' | url }}">返回主页</a>
-    </div>
-
     <div class="project-header">
+      <a class="back-link" href="{{ '/' | url }}">返回主页</a>
       <p class="eyebrow">{{ project.meta }}</p>
       <h1>{{ project.title }}</h1>
       <p class="project-tag">{{ project.tag }}</p>
