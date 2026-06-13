@@ -232,6 +232,15 @@ h1 {
   color: var(--muted);
 }
 
+.pub-body a {
+  color: var(--accent);
+}
+
+.pub-body a:hover {
+  color: var(--accent);
+  text-decoration: underline;
+}
+
 .sep {
   color: var(--muted);
   padding: 0 4px;
