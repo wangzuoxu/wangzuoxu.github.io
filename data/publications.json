@@ -1,0 +1,562 @@
+[
+  {
+    "year": 2026,
+    "title": "DOGREAT3D: Multimodal 3D reconstruction of complex mechanical parts with diffusion models and geometric refinement strategies",
+    "journal": "Journal of Manufacturing Systems",
+    "volume": "86",
+    "pages": "586--599",
+    "doi": "",
+    "pdf": "",
+    "kind": "article"
+  },
+  {
+    "year": 2026,
+    "title": "End-to-end multimodal knowledge graph construction for industrial exploded views via attention-guided expert chains",
+    "journal": "Journal of Manufacturing Systems",
+    "volume": "84",
+    "pages": "85--99",
+    "doi": "",
+    "pdf": "",
+    "kind": "article"
+  },
+  {
+    "year": 2026,
+    "title": "Exploring advanced human-AI hybrid intelligence solutions now and beyond: a synthesis of the special issue portfolio",
+    "journal": "Journal of Engineering Design",
+    "volume": "",
+    "pages": "1--6",
+    "doi": "",
+    "pdf": "",
+    "kind": "misc"
+  },
+  {
+    "year": 2026,
+    "title": "Toward Shared Situational Awareness in Human--AI Hybrid Intelligence: A Survey in High-Risk Aviation Environments",
+    "journal": "Reliability Engineering \\& System Safety",
+    "volume": "",
+    "pages": "112363",
+    "doi": "",
+    "pdf": "",
+    "kind": "article"
+  },
+  {
+    "year": 2026,
+    "title": "Towards a cognitive product design and manufacturing system:: enhancing industrial information integration with KG and/or LLM",
+    "journal": "",
+    "volume": "",
+    "pages": "",
+    "doi": "",
+    "pdf": "",
+    "kind": "misc"
+  },
+  {
+    "year": 2025,
+    "title": "A Product Patent Knowledge Mining and Recommendation Method Based on Few-Shot Feature Extraction and Cross-Citation Network",
+    "journal": "Journal of Mechanical Engineering",
+    "volume": "62",
+    "pages": "492--504",
+    "doi": "",
+    "pdf": "",
+    "kind": "article"
+  },
+  {
+    "year": 2025,
+    "title": "A multi-task engineering design intention recognition approach based on Vision Transformer and EEG data",
+    "journal": "Advanced Engineering Informatics",
+    "volume": "65",
+    "pages": "103353",
+    "doi": "",
+    "pdf": "",
+    "kind": "article"
+  },
+  {
+    "year": 2025,
+    "title": "A survey of large language model-augmented knowledge graphs for advanced complex product design",
+    "journal": "Journal of Manufacturing Systems",
+    "volume": "80",
+    "pages": "883--901",
+    "doi": "",
+    "pdf": "",
+    "kind": "article"
+  },
+  {
+    "year": 2025,
+    "title": "Advancements in knowledge graphs (KGs) for engineering design",
+    "journal": "Journal of Engineering Design",
+    "volume": "36",
+    "pages": "1065--1068",
+    "doi": "",
+    "pdf": "",
+    "kind": "misc"
+  },
+  {
+    "year": 2025,
+    "title": "An Automated SysML-Based Surrogate Model Construction Approach for Product CAD",
+    "journal": "International Design Engineering Technical Conferences and Computers and Information in Engineering Conference",
+    "volume": "89206",
+    "pages": "V02AT02A032",
+    "doi": "",
+    "pdf": "",
+    "kind": "inproceedings"
+  },
+  {
+    "year": 2025,
+    "title": "Dynamic open-vocabulary 3d scene graphs for long-term language-guided mobile manipulation",
+    "journal": "IEEE Robotics and Automation Letters",
+    "volume": "",
+    "pages": "",
+    "doi": "",
+    "pdf": "",
+    "kind": "article"
+  },
+  {
+    "year": 2025,
+    "title": "IndVisSGG: VLM-based scene graph generation for industrial spatial intelligence",
+    "journal": "Advanced Engineering Informatics",
+    "volume": "65",
+    "pages": "103107",
+    "doi": "",
+    "pdf": "",
+    "kind": "article"
+  },
+  {
+    "year": 2025,
+    "title": "Intelligent design exploration method for complex engineered system architecture generation",
+    "journal": "Journal of Engineering Design",
+    "volume": "36",
+    "pages": "797--835",
+    "doi": "",
+    "pdf": "",
+    "kind": "article"
+  },
+  {
+    "year": 2025,
+    "title": "Intelligent design of reconfigurable flexible assembly fixture for aircraft panels based on smart composite jig model and knowledge graph",
+    "journal": "Journal of Engineering Design",
+    "volume": "36",
+    "pages": "672--706",
+    "doi": "",
+    "pdf": "",
+    "kind": "article"
+  },
+  {
+    "year": 2025,
+    "title": "Knowledge graph with deep reinforcement learning for intelligent generation of machining process design",
+    "journal": "Journal of Engineering Design",
+    "volume": "36",
+    "pages": "2072--2106",
+    "doi": "",
+    "pdf": "",
+    "kind": "article"
+  },
+  {
+    "year": 2025,
+    "title": "Leveraging deep reinforcement learning for design space exploration with multi-fidelity surrogate model",
+    "journal": "Journal of Engineering Design",
+    "volume": "36",
+    "pages": "880--919",
+    "doi": "",
+    "pdf": "",
+    "kind": "article"
+  },
+  {
+    "year": 2025,
+    "title": "Promoting knowledge recommendation in innovative engineering design: a BERT-GAT-based patent representation learning approach",
+    "journal": "Journal of Engineering Design",
+    "volume": "36",
+    "pages": "1425--1450",
+    "doi": "",
+    "pdf": "",
+    "kind": "article"
+  },
+  {
+    "year": 2025,
+    "title": "Rapid generation method of process routes based on multi-agent collaboration with LLMs",
+    "journal": "Advanced Engineering Informatics",
+    "volume": "68",
+    "pages": "103733",
+    "doi": "",
+    "pdf": "",
+    "kind": "article"
+  },
+  {
+    "year": 2025,
+    "title": "Scene Graph-Guided Rapid Construction of Industrial Multimodal Knowledge Graphs",
+    "journal": "International Design Engineering Technical Conferences and Computers and Information in Engineering Conference",
+    "volume": "89206",
+    "pages": "V02AT02A052",
+    "doi": "",
+    "pdf": "",
+    "kind": "inproceedings"
+  },
+  {
+    "year": 2025,
+    "title": "Towards a self-cognitive complex product design system: A fine-grained multi-modal feature recognition and semantic understanding approach using large language models in mechanical engineering",
+    "journal": "Advanced Engineering Informatics",
+    "volume": "65",
+    "pages": "103265",
+    "doi": "",
+    "pdf": "",
+    "kind": "article"
+  },
+  {
+    "year": 2025,
+    "title": "Towards cognitive intelligence-enabled product design: The evolution, state-of-the-art, and future of AI-enabled product design",
+    "journal": "Journal of Industrial Information Integration",
+    "volume": "43",
+    "pages": "100759",
+    "doi": "",
+    "pdf": "",
+    "kind": "article"
+  },
+  {
+    "year": 2025,
+    "title": "VLM-MSGraph: Vision language model-enabled multi-hierarchical scene graph for robotic assembly",
+    "journal": "Robotics and Computer-Integrated Manufacturing",
+    "volume": "94",
+    "pages": "102978",
+    "doi": "",
+    "pdf": "",
+    "kind": "article"
+  },
+  {
+    "year": 2024,
+    "title": "A multi-hierarchical aggregation-based graph convolutional network for industrial knowledge graph embedding towards cognitive intelligent manufacturing",
+    "journal": "Journal of Manufacturing Systems",
+    "volume": "76",
+    "pages": "320--332",
+    "doi": "",
+    "pdf": "",
+    "kind": "article"
+  },
+  {
+    "year": 2024,
+    "title": "A survey of LLM-augmented knowledge graph construction and application in complex product design",
+    "journal": "Procedia CIRP",
+    "volume": "128",
+    "pages": "870--875",
+    "doi": "",
+    "pdf": "",
+    "kind": "article"
+  },
+  {
+    "year": 2024,
+    "title": "Large language model for humanoid cognition in proactive human-robot collaboration",
+    "journal": "2024 IEEE 20th International Conference on Automation Science and Engineering (CASE)",
+    "volume": "",
+    "pages": "540--545",
+    "doi": "",
+    "pdf": "",
+    "kind": "inproceedings"
+  },
+  {
+    "year": 2024,
+    "title": "ManufVisSGG: A vision-language-model approach for cognitive scene graph generation in manufacturing systems",
+    "journal": "2024 IEEE 20th International Conference on Automation Science and Engineering (CASE)",
+    "volume": "",
+    "pages": "1632--1637",
+    "doi": "",
+    "pdf": "",
+    "kind": "inproceedings"
+  },
+  {
+    "year": 2024,
+    "title": "Unveiling Designers' Cognitive States in Early Engineering Design Stages: An Autoencoder-DNN Approach based on EEG Data",
+    "journal": "2024 IEEE 20th International Conference on Automation Science and Engineering (CASE)",
+    "volume": "",
+    "pages": "1361--1366",
+    "doi": "",
+    "pdf": "",
+    "kind": "inproceedings"
+  },
+  {
+    "year": 2023,
+    "title": "Exploiting patent documents for cross-domain knowledge transfer in innovative engineering design: A Doc2Vec-GAT-based approach",
+    "journal": "2023 IEEE 19th International Conference on Automation Science and Engineering (CASE)",
+    "volume": "",
+    "pages": "1--6",
+    "doi": "",
+    "pdf": "",
+    "kind": "inproceedings"
+  },
+  {
+    "year": 2023,
+    "title": "Hybrid sensing-based approach for the monitoring and maintenance of shared manufacturing resources",
+    "journal": "International Journal of Production Research",
+    "volume": "61",
+    "pages": "3849--3867",
+    "doi": "",
+    "pdf": "",
+    "kind": "article"
+  },
+  {
+    "year": 2023,
+    "title": "Int2: Interactive trajectory prediction at intersections",
+    "journal": "Proceedings of the IEEE/CVF International Conference on Computer Vision",
+    "volume": "",
+    "pages": "8536--8547",
+    "doi": "",
+    "pdf": "",
+    "kind": "inproceedings"
+  },
+  {
+    "year": 2023,
+    "title": "Proactive human--robot collaboration: Mutual-cognitive, predictable, and self-organising perspectives",
+    "journal": "Robotics and Computer-Integrated Manufacturing",
+    "volume": "81",
+    "pages": "102510",
+    "doi": "",
+    "pdf": "",
+    "kind": "article"
+  },
+  {
+    "year": 2022,
+    "title": "A hypergraph-based approach for context-aware smart product-service system configuration",
+    "journal": "Computers \\& Industrial Engineering",
+    "volume": "163",
+    "pages": "107816",
+    "doi": "",
+    "pdf": "",
+    "kind": "article"
+  },
+  {
+    "year": 2022,
+    "title": "Dynamic scene graph for mutual-cognition generation in proactive human-robot collaboration",
+    "journal": "Procedia Cirp",
+    "volume": "107",
+    "pages": "943--948",
+    "doi": "",
+    "pdf": "",
+    "kind": "article"
+  },
+  {
+    "year": 2022,
+    "title": "Implications of data-driven product design: From information age towards intelligence age",
+    "journal": "Advanced Engineering Informatics",
+    "volume": "54",
+    "pages": "101793",
+    "doi": "",
+    "pdf": "",
+    "kind": "article"
+  },
+  {
+    "year": 2022,
+    "title": "The evolution, framework, and future of cognitive intelligence-enabled product design",
+    "journal": "Procedia CIRP",
+    "volume": "109",
+    "pages": "526--531",
+    "doi": "",
+    "pdf": "",
+    "kind": "article"
+  },
+  {
+    "year": 2021,
+    "title": "A Hypergraph-Based Knowledge Representation Model for Smart Product-Service System Development",
+    "journal": "International Design Engineering Technical Conferences and Computers and Information in Engineering Conference",
+    "volume": "85376",
+    "pages": "V002T02A055",
+    "doi": "",
+    "pdf": "",
+    "kind": "inproceedings"
+  },
+  {
+    "year": 2021,
+    "title": "A context-aware concept evaluation approach based on user experiences for smart product-service systems design iteration",
+    "journal": "Advanced Engineering Informatics",
+    "volume": "50",
+    "pages": "101394",
+    "doi": "",
+    "pdf": "",
+    "kind": "article"
+  },
+  {
+    "year": 2021,
+    "title": "A data-driven reversible framework for achieving Sustainable Smart product-service systems",
+    "journal": "Journal of Cleaner Production",
+    "volume": "279",
+    "pages": "123618",
+    "doi": "",
+    "pdf": "",
+    "kind": "article"
+  },
+  {
+    "year": 2021,
+    "title": "A graph-based context-aware requirement elicitation approach in smart product-service systems",
+    "journal": "International Journal of Production Research",
+    "volume": "59",
+    "pages": "635--651",
+    "doi": "",
+    "pdf": "",
+    "kind": "article"
+  },
+  {
+    "year": 2021,
+    "title": "Exploiting knowledge graphs in industrial products and services: A survey of key aspects, challenges, and future perspectives",
+    "journal": "Computers in Industry",
+    "volume": "129",
+    "pages": "103449",
+    "doi": "",
+    "pdf": "",
+    "kind": "article"
+  },
+  {
+    "year": 2021,
+    "title": "Exploration of the digital innovation process in the smart product-service system",
+    "journal": "International Design Engineering Technical Conferences and Computers and Information in Engineering Conference",
+    "volume": "85376",
+    "pages": "V002T02A058",
+    "doi": "",
+    "pdf": "",
+    "kind": "inproceedings"
+  },
+  {
+    "year": 2021,
+    "title": "Smart product-service systems",
+    "journal": "Elsevier",
+    "volume": "",
+    "pages": "",
+    "doi": "",
+    "pdf": "",
+    "kind": "misc"
+  },
+  {
+    "year": 2020,
+    "title": "A closed-loop context-aware framework for sustainable smart PSS development",
+    "journal": "2020 IEEE 16th International Conference on Automation Science and Engineering (CASE)",
+    "volume": "",
+    "pages": "311--316",
+    "doi": "",
+    "pdf": "",
+    "kind": "inproceedings"
+  },
+  {
+    "year": 2020,
+    "title": "A holistic relook at engineering design methodologies for smart product-service systems development",
+    "journal": "Journal of Cleaner Production",
+    "volume": "272",
+    "pages": "122737",
+    "doi": "",
+    "pdf": "",
+    "kind": "article"
+  },
+  {
+    "year": 2020,
+    "title": "A knowledge graph-aided concept--knowledge approach for evolutionary smart product--service system development",
+    "journal": "Journal of Mechanical design",
+    "volume": "142",
+    "pages": "101403",
+    "doi": "",
+    "pdf": "",
+    "kind": "article"
+  },
+  {
+    "year": 2020,
+    "title": "Evaluating smart PSS solutions with context-awareness in usage phase",
+    "journal": "Transdisciplinary Engineering for Complex Socio-technical Systems--Real-life Applications: Proceedings of the 27th ISTE International Conference on Transdisciplinary Engineering, July 1--July 10, 2020",
+    "volume": "",
+    "pages": "333--342",
+    "doi": "",
+    "pdf": "",
+    "kind": "inproceedings"
+  },
+  {
+    "year": 2020,
+    "title": "Smart product-service system configuration: a novel hypergraph model-based approach",
+    "journal": "2020 IEEE 16th International Conference on Automation Science and Engineering (CASE)",
+    "volume": "",
+    "pages": "323--328",
+    "doi": "",
+    "pdf": "",
+    "kind": "inproceedings"
+  },
+  {
+    "year": 2019,
+    "title": "A novel data-driven graph-based requirement elicitation framework in the smart product-service system context",
+    "journal": "Advanced engineering informatics",
+    "volume": "42",
+    "pages": "100983",
+    "doi": "",
+    "pdf": "",
+    "kind": "article"
+  },
+  {
+    "year": 2019,
+    "title": "A survey of requirements management in smart product-service systems",
+    "journal": "",
+    "volume": "",
+    "pages": "",
+    "doi": "",
+    "pdf": "",
+    "kind": "article"
+  },
+  {
+    "year": 2019,
+    "title": "A survey of smart product-service systems: Key aspects, challenges and future perspectives",
+    "journal": "Advanced engineering informatics",
+    "volume": "42",
+    "pages": "100973",
+    "doi": "",
+    "pdf": "",
+    "kind": "article"
+  },
+  {
+    "year": 2019,
+    "title": "Industrial smart product-service systems solution design via hybrid concerns",
+    "journal": "Procedia Cirp",
+    "volume": "83",
+    "pages": "187--192",
+    "doi": "",
+    "pdf": "",
+    "kind": "article"
+  },
+  {
+    "year": 2019,
+    "title": "Smart product-service systems solution design via hybrid crowd sensing approach",
+    "journal": "IEEE Access",
+    "volume": "7",
+    "pages": "128463--128473",
+    "doi": "",
+    "pdf": "",
+    "kind": "article"
+  },
+  {
+    "year": 2019,
+    "title": "Smart product-service systems: A novel transdisciplinary sociotechnical paradigm",
+    "journal": "Transdisciplinary Engineering for Complex Socio-Technical Systems: Proceedings of the 26th ISTE International Conference on Transdisciplinary Engineering",
+    "volume": "10",
+    "pages": "234",
+    "doi": "",
+    "pdf": "",
+    "kind": "inproceedings"
+  },
+  {
+    "year": 2018,
+    "title": "An Integrated Computer-Aided Design Environment for Customizing Product/Service Systems.",
+    "journal": "TE",
+    "volume": "",
+    "pages": "469--477",
+    "doi": "",
+    "pdf": "",
+    "kind": "inproceedings"
+  },
+  {
+    "year": 2018,
+    "title": "Knowledge representation and reasoning methods in the concept development of product design: a state-of-the-art review",
+    "journal": "",
+    "volume": "",
+    "pages": "",
+    "doi": "",
+    "pdf": "",
+    "kind": "article"
+  },
+  {
+    "year": "",
+    "title": "Advancing cognitive intelligence in complex product design: Method and system for design intention-driven knowledge recommendation",
+    "journal": "Available at SSRN 5434094",
+    "volume": "",
+    "pages": "",
+    "doi": "",
+    "pdf": "",
+    "kind": "article"
+  }
+]

@@ -1,0 +1,210 @@
+{
+  "brand": "Wang Zuoxu",
+  "publicationsUrl": "./data/publications.json",
+  "hero": {
+    "eyebrow": "Academic Homepage",
+    "name": "王佐旭",
+    "subtitle": "北京航空航天大学 · 机械工程及自动化学院",
+    "affiliation": "研究聚焦制造与服务知识管理、复杂产品设计、AI 驱动的设计方法、多模态知识抽取与推荐，以及智能产品设计系统。",
+    "summary": "目前主要从事复杂产品创新设计、制造知识工程、知识图谱与大模型融合、以及面向工程场景的智能设计辅助系统研究。",
+    "nav": [
+      { "label": "教育", "href": "#education" },
+      { "label": "工作", "href": "#work" },
+      { "label": "论文", "href": "#publications" },
+      { "label": "项目", "href": "#projects" },
+      { "label": "专利", "href": "#patents" },
+      { "label": "教学", "href": "#teaching" },
+      { "label": "联系", "href": "#contact" }
+    ],
+    "contacts": [
+      { "label": "邮箱", "value": "zuoxu_wang@buaa.edu.cn", "href": "mailto:zuoxu_wang@buaa.edu.cn" },
+      { "label": "备用邮箱", "value": "zuoxu.wang@outlook.com", "href": "mailto:zuoxu.wang@outlook.com" },
+      { "label": "ORCID", "value": "0000-0003-2524-1217", "href": "https://orcid.org/0000-0003-2524-1217" },
+      { "label": "电话", "value": "(+86) 18404264161", "href": "tel:+8618404264161" }
+    ]
+  },
+  "sections": {
+    "education": {
+      "id": "education",
+      "index": "01",
+      "title": "教育经历",
+      "items": [
+        {
+          "meta": "2017.01 - 2021.09",
+          "title": "博士，新加坡南洋理工大学机械与航天工程学院",
+          "text": "研究方向：智能产品与服务设计、设计知识管理、复杂产品设计。"
+        },
+        {
+          "meta": "2012.09 - 2016.07",
+          "title": "学士，天津大学机械学院工业设计专业",
+          "text": "接受工业设计、产品设计与工程设计方法训练。"
+        }
+      ]
+    },
+    "work": {
+      "id": "work",
+      "index": "02",
+      "title": "工作经历",
+      "items": [
+        {
+          "meta": "2022.01 - 至今",
+          "title": "助理教授，北京航空航天大学机械工程及自动化学院",
+          "text": "开展智能设计、知识图谱与多模态工程知识管理方向的研究与教学。"
+        },
+        {
+          "meta": "2021.03 - 2022.01",
+          "title": "研究助理，香港理工大学 RAIDS 研究组",
+          "text": "参与工业数字化服务化、设计知识管理与智能制造相关课题研究。"
+        }
+      ]
+    },
+    "research": {
+      "id": "research",
+      "index": "03",
+      "title": "研究方向",
+      "panels": [
+        {
+          "title": "核心方向",
+          "items": [
+            "制造与服务知识管理",
+            "复杂产品设计与创新设计方法",
+            "多模态知识抽取、融合与推荐",
+            "AI 驱动的设计辅助与认知智能系统"
+          ]
+        },
+        {
+          "title": "研究目标",
+          "items": [
+            "提升复杂产品设计知识发现与复用效率",
+            "支撑航空航天等高复杂度产品设计研发",
+            "推动大模型、图谱与工程设计流程融合",
+            "形成可落地的智能设计与知识服务工具"
+          ]
+        }
+      ]
+    },
+    "publications": {
+      "id": "publications",
+      "index": "04",
+      "title": "代表论文"
+    },
+    "projects": {
+      "id": "projects",
+      "index": "05",
+      "title": "研究项目",
+      "items": [
+        {
+          "meta": "2023 - 2025",
+          "title": "基于图网络的多模态设计知识融合与感知推荐方法",
+          "tag": "国家自然科学基金青年项目 · 主持",
+          "text": "面向多模态设计知识融合与推荐，研究设计知识的表示、对齐、关联和上下文感知推荐。",
+          "href": "projects/multimodal-knowledge-fusion/index.html",
+          "open": true
+        },
+        {
+          "meta": "2023 - 2025",
+          "title": "基于认知智能的复杂产品设计方法",
+          "tag": "国家级青年人才项目 · 主持",
+          "text": "研究认知智能赋能复杂产品设计的方法、系统与应用，面向需求理解、概念生成和方案优化。",
+          "href": "projects/cognitive-complex-product-design/index.html"
+        },
+        {
+          "meta": "2025 - 2027",
+          "title": "支撑产品设计 / 制造 / 服务一体化的数智化底座构建方法与技术",
+          "tag": "国家重点研发项目子任务 · 主持",
+          "text": "面向设计、制造与服务一体化场景，研究数字智能基础设施与工程知识协同机制。",
+          "href": "projects/digital-intelligent-foundation/index.html"
+        },
+        {
+          "meta": "2025",
+          "title": "模型视图识别软件",
+          "tag": "企业项目 · 主持",
+          "text": "面向工程设计场景的模型与视图自动识别工具，支持快速检索、理解和可视化。",
+          "href": "projects/model-view-recognition/index.html"
+        }
+      ]
+    },
+    "patents": {
+      "id": "patents",
+      "index": "06",
+      "title": "专利和软著内容",
+      "panels": [
+        {
+          "title": "已公开专利",
+          "items": [
+            "一种基于多模态输入与智能优化的 3D 设计辅助方法，王佐旭，梁欣欣，2025，已公开。",
+            "一种使用多模态模型进行齿轮图像精准识别的方法及系统，王佐旭，梁欣欣，2024，已公开。",
+            "一种多模态知识图谱自动化生成方法及系统，王佐旭，鄢智杰，2024，已公开。",
+            "一种融合 Doc2vec 和 GAT 的专利跨领域推荐方法及系统，王佐旭，李明睿，2023，已公开。"
+          ]
+        },
+        {
+          "title": "软著与软件成果",
+          "items": [
+            "模型视图识别软件：面向工程设计场景的识别与检索工具。",
+            "多模态知识图谱生成原型系统：支持文本、图像与结构化数据融合。",
+            "3D 设计辅助原型系统：结合多模态输入与智能优化策略。",
+            "如有正式软著登记号，可继续补充到此栏目中。"
+          ]
+        }
+      ]
+    },
+    "teaching": {
+      "id": "teaching",
+      "index": "07",
+      "title": "教学经历",
+      "panels": [
+        {
+          "title": "研究生课程",
+          "items": [
+            "制造业知识工程，32 学时，2023-2025 秋季学期，负责人 / 主讲人。",
+            "负责知识工程内容、知识抽取 / 表示 / 推理 / 融合方法、知识图谱构建示范案例等。",
+            "指导、批改、答疑学生大作业：基于开源数据的领域知识图谱构建与应用。"
+          ]
+        },
+        {
+          "title": "本科生课程",
+          "items": [
+            "Theory and Applications of Manufacturing Informatics，32 学时，2024-2025 秋季学期，负责人 / 主讲人。",
+            "负责课程大纲、课件制作、课程内容与案例讲解。",
+            "指导学生完成数据预处理、网络爬取、聚类、分类、关联规则挖掘等作业。"
+          ]
+        }
+      ]
+    },
+    "awards": {
+      "id": "awards",
+      "index": "08",
+      "title": "学术荣誉与服务",
+      "panels": [
+        {
+          "title": "学术荣誉",
+          "items": [
+            "2017 - 2020 南洋理工大学学术奖学金（S$ 2,500 per month）。",
+            "2019 11th CIRP Conference on Industrial Product-Service Systems 最佳会议论文奖。"
+          ]
+        },
+        {
+          "title": "学术服务",
+          "items": [
+            "Journal of Engineering Design 期刊编委。",
+            "Advanced Engineering Informatics 2022、2023、2024 优秀审稿人。",
+            "多本 SCI 期刊活跃审稿人，包括 Advanced Engineering Informatics、Journal of Manufacturing Systems、Journal of Cleaner Production、Computer in Industry、Journal of Computing and Information Science in Engineering。"
+          ]
+        }
+      ]
+    },
+    "contact": {
+      "id": "contact",
+      "index": "09",
+      "title": "联系方式",
+      "items": [
+        { "label": "邮箱", "value": "zuoxu_wang@buaa.edu.cn", "href": "mailto:zuoxu_wang@buaa.edu.cn" },
+        { "label": "备用邮箱", "value": "zuoxu.wang@outlook.com", "href": "mailto:zuoxu.wang@outlook.com" },
+        { "label": "电话", "value": "(+86) 18404264161", "href": "tel:+8618404264161" },
+        { "label": "ORCID", "value": "0000-0003-2524-1217", "href": "https://orcid.org/0000-0003-2524-1217" },
+        { "label": "地址", "value": "北京市海淀区学院路 37 号，北京航空航天大学新主楼" }
+      ]
+    }
+  }
+}
