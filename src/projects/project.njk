@@ -1,0 +1,50 @@
+---
+layout: layouts/base.njk
+pagination:
+  data: site.sections.projects.items
+  size: 1
+  alias: project
+permalink: "{{ project.href }}"
+eleventyComputed:
+  title: "{{ project.title }} | 王佐旭"
+  description: "{{ project.text }}"
+---
+<main class="page project-page">
+  <section class="hero project-hero">
+    <div class="topnav">
+      <div class="brand">
+        <span class="brand-mark"></span>
+        <a href="{{ '/' | url }}">{{ site.brand }}</a>
+      </div>
+      <a class="back-link" href="{{ '/' | url }}">返回主页</a>
+    </div>
+
+    <div class="project-header">
+      <p class="eyebrow">{{ project.meta }}</p>
+      <h1>{{ project.title }}</h1>
+      <p class="project-tag">{{ project.tag }}</p>
+      <p class="project-summary">{{ project.text }}</p>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="section-heading">
+      <p class="section-index">01</p>
+      <h2>项目详情</h2>
+    </div>
+    <div class="section-body">
+      <div class="panel project-panel">
+        <p>{{ project.text }}</p>
+      </div>
+      <div class="panel project-panel">
+        <h3>Demo 演示区</h3>
+        <div class="video-slot">
+          <div>
+            <p class="video-slot-label">视频位置</p>
+            <p>这里预留给你直接放入项目演示视频、录屏或者嵌入播放器。</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+</main>

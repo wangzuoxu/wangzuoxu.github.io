@@ -1,0 +1,235 @@
+---
+layout: layouts/base.njk
+title: 王佐旭 | 学术主页
+description: 王佐旭，北京航空航天大学机械工程及自动化学院学术主页。
+---
+<main class="page">
+  <section class="hero">
+    <div class="topnav">
+      <div class="brand">
+        <span class="brand-mark"></span>
+        <a href="{{ '/' | url }}">{{ site.brand }}</a>
+      </div>
+      <nav class="nav-links" aria-label="主导航">
+        {% for item in site.hero.nav %}
+          <a href="{{ item.href }}">{{ item.label }}</a>
+        {% endfor %}
+      </nav>
+    </div>
+
+    <div class="hero-top">
+      <div class="hero-title">
+        <p class="eyebrow">{{ site.hero.eyebrow }}</p>
+        <h1>{{ site.hero.name }}</h1>
+        <p class="subtitle">{{ site.hero.subtitle }}</p>
+        <p class="affiliation">{{ site.hero.affiliation }}</p>
+      </div>
+
+      <div class="hero-contacts">
+        {% for item in site.hero.contacts %}
+          <span>
+            {{ item.label }}：
+            {% if item.href %}
+              <a href="{{ item.href }}">{{ item.value }}</a>
+            {% else %}
+              {{ item.value }}
+            {% endif %}
+          </span>
+        {% endfor %}
+      </div>
+    </div>
+
+    <div class="hero-summary">{{ site.hero.summary }}</div>
+  </section>
+
+  {% macro sectionHeading(index, title) %}
+    <div class="section-heading">
+      <p class="section-index">{{ index }}</p>
+      <h2>{{ title }}</h2>
+    </div>
+  {% endmacro %}
+
+  <section class="section" id="education">
+    {{ sectionHeading(site.sections.education.index, site.sections.education.title) }}
+    <div class="section-body">
+      <div class="simple-list">
+        {% for item in site.sections.education.items %}
+          <div class="simple-item">
+            <div class="item-meta">{{ item.meta }}</div>
+            <div class="item-content">
+              <h3>{{ item.title }}</h3>
+              {% if item.text %}
+                <p>{{ item.text }}</p>
+              {% endif %}
+            </div>
+          </div>
+        {% endfor %}
+      </div>
+    </div>
+  </section>
+
+  <section class="section" id="work">
+    {{ sectionHeading(site.sections.work.index, site.sections.work.title) }}
+    <div class="section-body">
+      <div class="simple-list">
+        {% for item in site.sections.work.items %}
+          <div class="simple-item">
+            <div class="item-meta">{{ item.meta }}</div>
+            <div class="item-content">
+              <h3>{{ item.title }}</h3>
+              {% if item.text %}
+                <p>{{ item.text }}</p>
+              {% endif %}
+            </div>
+          </div>
+        {% endfor %}
+      </div>
+    </div>
+  </section>
+
+  <section class="section" id="research">
+    {{ sectionHeading(site.sections.research.index, site.sections.research.title) }}
+    <div class="section-body">
+      <div class="two-col">
+        {% for panel in site.sections.research.panels %}
+          <div class="panel">
+            <h3>{{ panel.title }}</h3>
+            <ul class="bullet-list">
+              {% for item in panel.items %}
+                <li>{{ item }}</li>
+              {% endfor %}
+            </ul>
+          </div>
+        {% endfor %}
+      </div>
+    </div>
+  </section>
+
+  <section class="section" id="publications">
+    {{ sectionHeading(site.sections.publications.index, site.sections.publications.title) }}
+    <div class="section-body">
+      <div class="pub-list">
+        {% for pub in publications %}
+          <div class="pub-item">
+            <div class="pub-year">{{ pub.year }}</div>
+            <div class="pub-body">
+              <h3>{{ pub.title }}</h3>
+              <p>
+                {% if pub.journal %}{{ pub.journal }}{% endif %}
+                {% if pub.volume %}{% if pub.journal %} · {% endif %}{{ pub.volume }}{% endif %}
+                {% if pub.pages %}{% if pub.journal or pub.volume %} · {% endif %}{{ pub.pages }}{% endif %}
+                {% if pub.kind %}{% if pub.journal or pub.volume or pub.pages %} · {% endif %}{{ pub.kind }}{% endif %}
+              </p>
+              <p class="pub-links">
+                {% if pub.doi %}
+                  <a href="https://doi.org/{{ pub.doi }}">DOI</a>
+                {% endif %}
+                {% if pub.pdf %}
+                  {% if pub.doi %}<span class="sep">·</span>{% endif %}
+                  <a href="{{ pub.pdf | url }}">Papers</a>
+                {% endif %}
+              </p>
+            </div>
+          </div>
+        {% endfor %}
+      </div>
+    </div>
+  </section>
+
+  <section class="section" id="projects">
+    {{ sectionHeading(site.sections.projects.index, site.sections.projects.title) }}
+    <div class="section-body">
+      <div class="project-list">
+        {% for item in site.sections.projects.items %}
+          <details class="project-item" {% if item.open %}open{% endif %}>
+            <summary>
+              <div class="item-meta">{{ item.meta }}</div>
+              <div class="summary-title">{{ item.title }}</div>
+              <div class="summary-tag">{{ item.tag }}</div>
+            </summary>
+            <div class="project-detail">
+              <p>{{ item.text }}</p>
+              <div class="project-links">
+                <a href="{{ item.href | url }}">项目详情和demo</a>
+              </div>
+            </div>
+          </details>
+        {% endfor %}
+      </div>
+    </div>
+  </section>
+
+  <section class="section" id="patents">
+    {{ sectionHeading(site.sections.patents.index, site.sections.patents.title) }}
+    <div class="section-body">
+      <div class="two-col">
+        {% for panel in site.sections.patents.panels %}
+          <div class="panel">
+            <h3>{{ panel.title }}</h3>
+            <ul class="bullet-list">
+              {% for item in panel.items %}
+                <li>{{ item }}</li>
+              {% endfor %}
+            </ul>
+          </div>
+        {% endfor %}
+      </div>
+    </div>
+  </section>
+
+  <section class="section" id="teaching">
+    {{ sectionHeading(site.sections.teaching.index, site.sections.teaching.title) }}
+    <div class="section-body">
+      <div class="two-col">
+        {% for panel in site.sections.teaching.panels %}
+          <div class="panel">
+            <h3>{{ panel.title }}</h3>
+            <ul class="bullet-list">
+              {% for item in panel.items %}
+                <li>{{ item }}</li>
+              {% endfor %}
+            </ul>
+          </div>
+        {% endfor %}
+      </div>
+    </div>
+  </section>
+
+  <section class="section" id="awards">
+    {{ sectionHeading(site.sections.awards.index, site.sections.awards.title) }}
+    <div class="section-body">
+      <div class="two-col">
+        {% for panel in site.sections.awards.panels %}
+          <div class="panel">
+            <h3>{{ panel.title }}</h3>
+            <ul class="bullet-list">
+              {% for item in panel.items %}
+                <li>{{ item }}</li>
+              {% endfor %}
+            </ul>
+          </div>
+        {% endfor %}
+      </div>
+    </div>
+  </section>
+
+  <section class="section" id="contact">
+    {{ sectionHeading(site.sections.contact.index, site.sections.contact.title) }}
+    <div class="section-body">
+      <div class="panel">
+        <ul class="bullet-list contact-list">
+          {% for item in site.sections.contact.items %}
+            <li>
+              {{ item.label }}：
+              {% if item.href %}
+                <a href="{{ item.href }}">{{ item.value }}</a>
+              {% else %}
+                {{ item.value }}
+              {% endif %}
+            </li>
+          {% endfor %}
+        </ul>
+      </div>
+    </div>
+  </section>
+</main>
