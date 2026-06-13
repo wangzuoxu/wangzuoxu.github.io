@@ -1,28 +1,28 @@
 # Academic Homepage Template
 
-这是一个基于 Eleventy 的中文学术主页模板，适合长期维护个人主页、论文列表和项目详情页。
+这是一个面向个人主页仓库的 Eleventy 静态站模板，适合发布到 `https://wangzuoxu.github.io/` 这种 GitHub Pages 根站点。
 
-## 现在的结构
+## 仓库类型
+
+你的仓库是个人主页仓库，也就是：
+
+- 仓库名通常是 `wangzuoxu.github.io`
+- 站点地址是 `https://wangzuoxu.github.io/`
+- 不是项目页子路径形式，所以不需要 `/repo-name/` 前缀
+
+## 站点结构
 
 - `src/index.njk`：首页模板
 - `src/projects/project.njk`：项目详情页模板
 - `src/_data/site.js`：主页基础信息
 - `src/_data/publications.js`：论文数据
 - `styles.css`：站点样式
-- `papers/`：论文 PDF
 - `.eleventy.js`：Eleventy 构建配置
 - `.github/workflows/pages.yml`：GitHub Pages 自动部署
 
-## 你以后主要改哪里
-
-- 主页栏目、联系信息、项目入口：`data/site.json`
-- 论文列表：`data/publications.json`
-- 页面样式：`styles.css`
-- 首页和项目页的 HTML 结构：`src/` 下面的模板
-
 ## 本地开发
 
-先安装依赖：
+安装依赖：
 
 ```bash
 npm install
@@ -40,26 +40,32 @@ npm run dev
 npm run build
 ```
 
-## GitHub Pages 发布方式
+## GitHub Pages 发布
 
-这个模板默认使用 GitHub Actions 部署到 GitHub Pages。
+对于个人主页仓库，推荐使用 GitHub Actions 发布到 Pages。
 
-发布流程：
+### 需要做的设置
 
-1. 把仓库推送到 GitHub。
-2. 到仓库 `Settings` > `Pages`。
-3. 将 `Source` 设为 `GitHub Actions`。
-4. 提交代码后，Action 会自动构建并部署到 Pages。
+1. 打开 GitHub 仓库。
+2. 进入 `Settings` > `Pages`。
+3. 将 `Source` 设置为 `GitHub Actions`。
+4. 推送到 `main` 分支后，Actions 会自动构建并部署。
 
-工作流会自动设置 `ELEVENTY_PATH_PREFIX`，以适配 GitHub Pages 的仓库子路径。
+### 个人主页的路径说明
 
-## 如果你要接入真实后端
+因为这是根站点，页面资源应该直接从站点根路径加载，例如：
 
-当前模板是纯静态站，最适合 GitHub Pages。
+- `/styles.css`
+- `/papers/...`
 
-如果后期要接真实 API，可以继续保留以下接口约定：
+不应该再拼接 `/<repo-name>/` 这种项目页前缀。
+
+## 如果你之后还想接真实后端
+
+静态站模板已经适合当前的 GitHub Pages 发布方式。  
+如果未来需要接 API，可以继续沿用下面的接口约定：
 
 - `GET /api/site`
 - `GET /api/publications`
 
-前端模板不用大改，只需要把数据来源改成接口即可。
+前端模板只要改数据来源即可，不必重写页面结构。
