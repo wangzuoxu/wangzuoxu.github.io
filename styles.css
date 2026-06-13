@@ -1,4 +1,4 @@
-:root {
+﻿:root {
   color-scheme: light;
   --bg: #f5f3ee;
   --text: #151515;
@@ -460,4 +460,11 @@ h1 {
   h1 {
     max-width: none;
   }
+}
+
+.pub-authors {
+  margin: 4px 0 6px;
+  color: var(--muted);
+  font-size: 0.92rem;
+  line-height: 1.7;
 }

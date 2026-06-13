@@ -7,7 +7,14 @@
     "pages": "586--599",
     "doi": "10.1016/j.jmsy.2026.03.024",
     "pdf": "papers/Liang et al_2026_Journal of Manufacturing Systems_DOGREAT3D - Multimodal 3D reconstruction of complex mechanical parts with diffusion models and.pdf",
-    "kind": "article"
+    "kind": "article",
+    "authors": [
+      "Xinxin Liang",
+      "Zuoxu Wang",
+      "Jihong Liu",
+      "Ang Liu",
+      "Chun-Hsien Chen"
+    ]
   },
   {
     "year": 2026,
@@ -17,7 +24,14 @@
     "pages": "85--99",
     "doi": "10.1016/j.jmsy.2025.10.013",
     "pdf": "papers/Liang et al_2026_Journal of Manufacturing Systems_End-to-end multimodal knowledge graph construction for industrial exploded views via.pdf",
-    "kind": "article"
+    "kind": "article",
+    "authors": [
+      "Xinxin Liang",
+      "Zuoxu Wang",
+      "Mingrui Li",
+      "Chun-Hsien Chen",
+      "Jihong Liu"
+    ]
   },
   {
     "year": 2026,
@@ -49,16 +63,7 @@
     "pdf": "",
     "kind": "misc"
   },
-  {
-    "year": 2025,
-    "title": "A Product Patent Knowledge Mining and Recommendation Method Based on Few-Shot Feature Extraction and Cross-Citation Network",
-    "journal": "Journal of Mechanical Engineering",
-    "volume": "62",
-    "pages": "492--504",
-    "doi": "",
-    "pdf": "",
-    "kind": "article"
-  },
+ 
   {
     "year": 2025,
     "title": "A multi-task engineering design intention recognition approach based on Vision Transformer and EEG data",
@@ -67,7 +72,13 @@
     "pages": "103353",
     "doi": "10.1016/j.aei.2025.103353",
     "pdf": "papers/Li et al_2025_Advanced Engineering Informatics_A multi-task engineering design intention recognition approach based on Vision Transformer and EEG.pdf",
-    "kind": "article"
+    "kind": "article",
+    "authors": [
+      "Mingrui Li",
+      "Zuoxu Wang",
+      "Fan Li",
+      "Jihong Liu"
+    ]
   },
   {
     "year": 2025,
@@ -77,18 +88,14 @@
     "pages": "883--901",
     "doi": "10.1016/j.jmsy.2025.04.016",
     "pdf": "papers/Liang et al_2025_Journal of Manufacturing Systems_A survey of large language model-augmented knowledge graphs for advanced complex product design.pdf",
-    "kind": "article"
+    "kind": "article",
+    "authors": [
+      "Xinxin Liang",
+      "Zuoxu Wang",
+      "Jihong Liu"
+    ]
   },
-  {
-    "year": 2025,
-    "title": "Advancements in knowledge graphs (KGs) for engineering design",
-    "journal": "Journal of Engineering Design",
-    "volume": "36",
-    "pages": "1065--1068",
-    "doi": "",
-    "pdf": "",
-    "kind": "misc"
-  },
+  
   {
     "year": 2025,
     "title": "An Automated SysML-Based Surrogate Model Construction Approach for Product CAD",
@@ -97,7 +104,14 @@
     "pages": "V02AT02A032",
     "doi": "10.1115/DETC2025-168774",
     "pdf": "papers/Xie et al_2025_An Automated SysML-Based Surrogate Model Construction Approach for Product CAD.pdf",
-    "kind": "inproceedings"
+    "kind": "inproceedings",
+    "authors": [
+      "Yanling Xie",
+      "Jihong Liu",
+      "Qiang Zhang",
+      "Ruiwen Wang",
+      "Zuoxu Wang"
+    ]
   },
   {
     "year": 2025,
@@ -107,7 +121,17 @@
     "pages": "",
     "doi": "10.1109/LRA.2025.3547643",
     "pdf": "papers/Yan et al_2025_Dynamic Open-Vocabulary 3D Scene Graphs for Long-Term Language-Guided Mobile Manipulation.pdf",
-    "kind": "article"
+    "kind": "article",
+    "authors": [
+      "Zhijie Yan",
+      "Shufei Li",
+      "Zuoxu Wang",
+      "Lixiu Wu",
+      "Han Wang",
+      "Jun Zhu",
+      "Lijiang Chen",
+      "Jihong Liu"
+    ]
   },
   {
     "year": 2025,
@@ -117,7 +141,13 @@
     "pages": "103107",
     "doi": "10.1016/j.aei.2024.103107",
     "pdf": "papers/Wang et al_2025_Advanced Engineering Informatics_IndVisSGG - VLM-based scene graph generation for industrial spatial intelligence.pdf",
-    "kind": "article"
+    "kind": "article",
+    "authors": [
+      "Zuoxu Wang",
+      "Zhijie Yan",
+      "Shufei Li",
+      "Jihong Liu"
+    ]
   },
   {
     "year": 2025,
@@ -127,7 +157,15 @@
     "pages": "797--835",
     "doi": "10.1080/09544828.2024.2362588",
     "pdf": "",
-    "kind": "article"
+    "kind": "article",
+    "authors": [
+      "Ru Wang",
+      "ZhuQin Wei",
+      "Haokun Li",
+      "Zuoxu Wang",
+      "Yu Huang",
+      "Guoxin Wang"
+    ]
   },
   {
     "year": 2025,
@@ -137,7 +175,14 @@
     "pages": "672--706",
     "doi": "10.1080/09544828.2024.2345696",
     "pdf": "papers/Meng et al_2025_Intelligent design of reconfigurable flexible assembly fixture for aircraft panels based on smart.pdf",
-    "kind": "article"
+    "kind": "article",
+    "authors": [
+      "Shuang Meng",
+      "Wei Fan",
+      "Xin Wang",
+      "Lianyu Zheng",
+      "Zuoxu Wang"
+    ]
   },
   {
     "year": 2025,
@@ -157,7 +202,15 @@
     "pages": "880--919",
     "doi": "10.1080/09544828.2024.2366686",
     "pdf": "",
-    "kind": "article"
+    "kind": "article",
+    "authors": [
+      "Haokun Li",
+      "Ru Wang",
+      "Zuoxu Wang",
+      "Guannan Li",
+      "Guoxin Wang",
+      "Yan Yan"
+    ]
   },
   {
     "year": 2025,
@@ -167,7 +220,14 @@
     "pages": "1425--1450",
     "doi": "10.1080/09544828.2024.2339713",
     "pdf": "papers/Li et al_2025_Promoting knowledge recommendation in innovative engineering design - a BERT-GAT-based patent.pdf",
-    "kind": "article"
+    "kind": "article",
+    "authors": [
+      "Mingrui Li",
+      "Zuoxu Wang",
+      "Zhijie Yan",
+      "Xinxin Liang",
+      "Jihong Liu"
+    ]
   },
   {
     "year": 2025,
@@ -177,7 +237,15 @@
     "pages": "103733",
     "doi": "10.1016/j.aei.2025.103733",
     "pdf": "papers/Xie et al_2025_Advanced Engineering Informatics_Rapid generation method of process routes based on multi-agent collaboration with LLMs.pdf",
-    "kind": "article"
+    "kind": "article",
+    "authors": [
+      "Yanling Xie",
+      "Jihong Liu",
+      "Ruiwen Wang",
+      "Zuoxu Wang",
+      "Kai Yu",
+      "Ziming Song"
+    ]
   },
   {
     "year": 2025,
@@ -197,7 +265,12 @@
     "pages": "103265",
     "doi": "10.1016/j.aei.2025.103265",
     "pdf": "papers/Liang et al_2025_Advanced Engineering Informatics_Towards a self-cognitive complex product design system - A fine-grained multi-modal feature.pdf",
-    "kind": "article"
+    "kind": "article",
+    "authors": [
+      "Xinxin Liang",
+      "Zuoxu Wang",
+      "Jihong Liu"
+    ]
   },
   {
     "year": 2025,
@@ -207,7 +280,15 @@
     "pages": "100759",
     "doi": "10.1016/j.jii.2024.100759",
     "pdf": "papers/Wang et al_2025_Towards cognitive intelligence-enabled product design - The evolution, state-of-the-art, and future.pdf",
-    "kind": "article"
+    "kind": "article",
+    "authors": [
+      "Zuoxu Wang",
+      "Xinxin Liang",
+      "Mingrui Li",
+      "Shufei Li",
+      "Jihong Liu",
+      "Lianyu Zheng"
+    ]
   },
   {
     "year": 2025,
@@ -217,7 +298,13 @@
     "pages": "102978",
     "doi": "10.1016/j.rcim.2025.102978",
     "pdf": "papers/Li et al_2025_Robotics and Computer-Integrated Manufacturing_VLM-MSGraph - Vision Language Model-enabled Multi-hierarchical Scene Graph for robotic assembly.pdf",
-    "kind": "article"
+    "kind": "article",
+    "authors": [
+      "Shufei Li",
+      "Zhijie Yan",
+      "Zuoxu Wang",
+      "Yiping Gao"
+    ]
   },
   {
     "year": 2024,
@@ -227,7 +314,12 @@
     "pages": "320--332",
     "doi": "10.1016/j.jmsy.2024.08.012",
     "pdf": "papers/Liu et al_2024_Journal of Manufacturing Systems_A multi-hierarchical aggregation-based graph convolutional network for industrial knowledge graph.pdf",
-    "kind": "article"
+    "kind": "article",
+    "authors": [
+      "Bufan Liu",
+      "Chun-Hsien Chen",
+      "Zuoxu Wang"
+    ]
   },
   {
     "year": 2024,
@@ -237,7 +329,13 @@
     "pages": "870--875",
     "doi": "10.1016/j.procir.2024.07.069",
     "pdf": "papers/Liang et al_2024_Procedia CIRP_A survey of LLM-augmented knowledge graph construction and application in complex product design.pdf",
-    "kind": "article"
+    "kind": "article",
+    "authors": [
+      "Xinxin Liang",
+      "Zuoxu Wang",
+      "Mingrui Li",
+      "Zhijie Yan"
+    ]
   },
   {
     "year": 2024,
