@@ -166,19 +166,11 @@
     <div class="section-body">
       <div class="project-list">
         {% for item in locale.sections.projects.items %}
-          <details class="project-item" {% if item.open %}open{% endif %}>
-            <summary>
-              <div class="item-meta">{{ item.meta }}</div>
-              <div class="summary-title">{{ item.title }}</div>
-              <div class="summary-tag">{{ item.tag }}</div>
-            </summary>
-            <div class="project-detail">
-              <p>{{ item.text }}</p>
-              <div class="project-links">
-                <a href="{{ item.href | url }}">{{ locale.ui.projectLink }}</a>
-              </div>
-            </div>
-          </details>
+          <article class="project-item">
+            <div class="item-meta">{{ item.meta }}</div>
+            <div class="summary-title">{{ item.title }}</div>
+            <div class="summary-tag">{{ item.tag }}</div>
+          </article>
         {% endfor %}
       </div>
     </div>
