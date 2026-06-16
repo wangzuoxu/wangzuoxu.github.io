@@ -18,7 +18,8 @@
     "contacts": [
       { "label": "邮箱", "value": "zuoxu_wang@buaa.edu.cn", "href": "mailto:zuoxu_wang@buaa.edu.cn" },
       { "label": "备用邮箱", "value": "zuoxu.wang@outlook.com", "href": "mailto:zuoxu.wang@outlook.com" },
-      { "label": "ORCID", "value": "0000-0003-2524-1217", "href": "https://orcid.org/0000-0003-2524-1217" }
+      { "label": "ORCID", "value": "0000-0003-2524-1217", "href": "https://orcid.org/0000-0003-2524-1217" },
+      { "label": "课题组", "value": "https://wangzuoxu.github.io/iid/" }
 
     ]
   },
