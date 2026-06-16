@@ -40,7 +40,7 @@ const zh = {
       { label: "邮箱", value: "zuoxu_wang@buaa.edu.cn", href: "mailto:zuoxu_wang@buaa.edu.cn" },
       { label: "备用邮箱", value: "zuoxu.wang@outlook.com", href: "mailto:zuoxu.wang@outlook.com" },
       { label: "ORCID", value: "0000-0003-2524-1217", href: "https://orcid.org/0000-0003-2524-1217" },
-      { label: "电话", value: "(+86) 18404264161", href: "tel:+8618404264161" },
+      { label: "课题组", value: "https://wangzuoxu.github.io/iid/", href: "https://wangzuoxu.github.io/iid/" },
     ],
   },
   sections: {
@@ -219,8 +219,8 @@ const zh = {
       items: [
         { label: "邮箱", value: "zuoxu_wang@buaa.edu.cn", href: "mailto:zuoxu_wang@buaa.edu.cn" },
         { label: "备用邮箱", value: "zuoxu.wang@outlook.com", href: "mailto:zuoxu.wang@outlook.com" },
-        { label: "电话", value: "(+86) 18404264161", href: "tel:+8618404264161" },
         { label: "ORCID", value: "0000-0003-2524-1217", href: "https://orcid.org/0000-0003-2524-1217" },
+        { label: "课题组", value: "课题组", href: "https://wangzuoxu.github.io/iid/" },
         { label: "地址", value: "北京市海淀区学院路 37 号，北京航空航天大学新主楼" },
       ],
     },
@@ -263,7 +263,7 @@ const en = {
       { label: "Email", value: "zuoxu_wang@buaa.edu.cn", href: "mailto:zuoxu_wang@buaa.edu.cn" },
       { label: "Alt. email", value: "zuoxu.wang@outlook.com", href: "mailto:zuoxu.wang@outlook.com" },
       { label: "ORCID", value: "0000-0003-2524-1217", href: "https://orcid.org/0000-0003-2524-1217" },
-      { label: "Phone", value: "(+86) 18404264161", href: "tel:+8618404264161" },
+      { label: "Research Group", value: "Research Group", href: "https://wangzuoxu.github.io/iid/" },
     ],
   },
   sections: {
@@ -442,8 +442,8 @@ const en = {
       items: [
         { label: "Email", value: "zuoxu_wang@buaa.edu.cn", href: "mailto:zuoxu_wang@buaa.edu.cn" },
         { label: "Alt. email", value: "zuoxu.wang@outlook.com", href: "mailto:zuoxu.wang@outlook.com" },
-        { label: "Phone", value: "(+86) 18404264161", href: "tel:+8618404264161" },
         { label: "ORCID", value: "0000-0003-2524-1217", href: "https://orcid.org/0000-0003-2524-1217" },
+        { label: "Research Group", value: "Research Group", href: "https://wangzuoxu.github.io/iid/" },
         { label: "Address", value: "New Main Building, Beihang University, 37 Xueyuan Road, Haidian District, Beijing, China" },
       ],
     },
