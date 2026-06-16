@@ -1,26 +1,58 @@
-# Academic Homepage Template
+# Academic Homepage
 
-这是一个面向个人主页仓库的 Eleventy 静态站模板，适合发布到 `https://wangzuoxu.github.io/` 这种 GitHub Pages 根站点。
+这是一个基于 Eleventy 的个人学术主页模板，适合部署到 GitHub Pages。
 
-## 仓库类型
+## 维护说明
 
-你的仓库是个人主页仓库，也就是：
+当前网站主要通过两份数据维护：
 
-- 仓库名通常是 `wangzuoxu.github.io`
-- 站点地址是 `https://wangzuoxu.github.io/`
-- 不是项目页子路径形式，所以不需要 `/repo-name/` 前缀
+- `data/site.json`：主页基础信息
+- `data/publications.json`：论文列表
 
-## 站点结构
+也就是说：
 
-- `src/index.njk`：首页模板
-- `src/projects/project.njk`：项目详情页模板
-- `src/_data/site.js`：主页基础信息
-- `src/_data/publications.js`：论文数据
-- `styles.css`：站点样式
-- `.eleventy.js`：Eleventy 构建配置
-- `.github/workflows/pages.yml`：GitHub Pages 自动部署
+- 想改首页中英文内容、联系方式、栏目顺序、项目介绍、教学和荣誉，优先改 `data/site.json`
+- 想改论文列表，改 `data/publications.json`
+- `src/_data/site.js` 只是读取 `data/site.json` 的入口，一般不用直接改
+- `src/_data/publications.js` 只是读取 `data/publications.json` 的入口，一般也不用直接改
 
-## 本地开发
+## 推荐修改位置
+
+### 1. 主页内容
+
+编辑 [data/site.json](./data/site.json)：
+
+- 个人简介
+- 中英文首页文案
+- 联系方式
+- 教育经历
+- 工作经历
+- 研究方向
+- 研究项目
+- 专利与著述
+- 教学经历
+- 学术荣誉与服务
+
+### 2. 论文列表
+
+编辑 [data/publications.json](./data/publications.json)：
+
+- 新增论文
+- 删除论文
+- 修改论文标题、作者、期刊、年份、DOI、PDF 链接
+
+### 3. 页面模板
+
+如果你要调整首页排版、栏目结构或模块显示逻辑，请编辑：
+
+- [src/_includes/partials/home-page.njk](./src/_includes/partials/home-page.njk)
+- [src/_includes/layouts/base.njk](./src/_includes/layouts/base.njk)
+
+### 4. 样式
+
+如果你要调整颜色、间距、字体、按钮样式，请编辑 [styles.css](./styles.css)。
+
+## 本地运行
 
 安装依赖：
 
@@ -34,45 +66,34 @@ npm install
 npm run dev
 ```
 
-构建静态站：
+构建静态站点：
 
 ```bash
 npm run build
 ```
 
-## GitHub Pages 发布
+## 数据结构
 
-对于个人主页仓库，推荐使用 GitHub Actions 发布到 Pages。
+### `data/site.json`
 
-### 需要做的设置
+建议保留以下结构：
 
-1. 打开 GitHub 仓库。
-2. 进入 `Settings` > `Pages`。
-3. 将 `Source` 设置为 `GitHub Actions`。
-4. 推送到 `main` 分支后，Actions 会自动构建并部署。
+- `brand`
+- `publicationsUrl`
+- `defaultLang`
+- `locales.zh`
+- `locales.en`
 
-### 个人主页的路径说明
+其中：
 
-因为这是根站点，页面资源应该直接从站点根路径加载，例如：
+- `locales.zh` 对应中文首页
+- `locales.en` 对应英文首页
 
-- `/styles.css`
-- `/papers/...`
+如果你想新增字段，建议在中英文两份内容里同步补齐，避免两个页面显示不一致。
 
-不应该再拼接 `/<repo-name>/` 这种项目页前缀。
+### `data/publications.json`
 
-## 如果你之后还想接真实后端
-
-静态站模板已经适合当前的 GitHub Pages 发布方式。  
-如果未来需要接 API，可以继续沿用下面的接口约定：
-
-- `GET /api/site`
-- `GET /api/publications`
-
-前端模板只要改数据来源即可，不必重写页面结构。
-
-## Adding papers later
-
-When you add a new paper, update `data/publications.json` with:
+每条论文建议包含这些字段：
 
 - `year`
 - `title`
@@ -80,7 +101,16 @@ When you add a new paper, update `data/publications.json` with:
 - `volume`
 - `pages`
 - `kind`
-- `doi` for the DOI link
-- `pdf` for the PDF path, for example `papers/your-paper.pdf`
+- `authors`
+- `doi`
+- `pdf`
 
-If the PDF is already in `papers/`, just point `pdf` to that file and it will show up as a clickable link on the homepage.
+如果 `pdf` 指向站内文件，比如 `papers/` 目录，主页会自动生成 PDF 链接。
+
+## 当前实现方式
+
+- 主页数据统一从 `data/site.json` 读取
+- 论文数据统一从 `data/publications.json` 读取
+- `script.js` 也会优先使用这两份数据渲染前端页面
+
+如果以后要继续精简维护流程，可以再考虑把某些栏目拆成更细的 JSON 模块。

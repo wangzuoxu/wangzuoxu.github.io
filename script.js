@@ -6,6 +6,20 @@ function apiPath(pathname) {
 
 const DATA_URLS = [apiPath("/api/site"), "./data/site.json"];
 
+function selectLocale(site) {
+  if (!site || !site.locales) return site;
+  const htmlLang = (document.documentElement.lang || "").toLowerCase();
+  const lang = htmlLang.startsWith("en") ? "en" : "zh";
+  const locale = site.locales[lang] || site.locales[site.defaultLang] || site.locales.zh || site.locales.en;
+  return {
+    ...locale,
+    brand: site.brand,
+    publicationsUrl: site.publicationsUrl,
+    defaultLang: site.defaultLang,
+    locales: site.locales,
+  };
+}
+
 function el(tag, attrs = {}, children = []) {
   const node = document.createElement(tag);
   for (const [key, value] of Object.entries(attrs)) {
@@ -234,7 +248,8 @@ async function init() {
   const app = document.getElementById("app");
   if (!app) return;
   app.textContent = "Loading...";
-  const data = await loadData();
+  const site = await loadData();
+  const data = selectLocale(site);
   const publications = await loadPublications([
     apiPath("/api/publications"),
     data.publicationsUrl,
