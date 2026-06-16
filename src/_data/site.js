@@ -46,7 +46,7 @@ const zh = {
   sections: {
     education: {
       id: "education",
-      index: "01",
+      index: "02",
       title: "教育经历",
       items: [
         {
@@ -62,7 +62,7 @@ const zh = {
     },
     work: {
       id: "work",
-      index: "02",
+      index: "01",
       title: "工作经历",
       items: [
         {
@@ -269,7 +269,7 @@ const en = {
   sections: {
     education: {
       id: "education",
-      index: "01",
+      index: "02",
       title: "Education",
       items: [
         {
@@ -285,7 +285,7 @@ const en = {
     },
     work: {
       id: "work",
-      index: "02",
+      index: "01",
       title: "Experience",
       items: [
         {

@@ -34,11 +34,11 @@
     </div>
   {% endmacro %}
 
-  <section class="section" id="education">
-    {{ sectionHeading(locale.sections.education.index, locale.sections.education.title) }}
+  <section class="section" id="work">
+    {{ sectionHeading(locale.sections.work.index, locale.sections.work.title) }}
     <div class="section-body">
       <div class="simple-list">
-        {% for item in locale.sections.education.items %}
+        {% for item in locale.sections.work.items %}
           <div class="simple-item">
             <div class="item-meta">{{ item.meta }}</div>
             <div class="item-content">
@@ -53,11 +53,11 @@
     </div>
   </section>
 
-  <section class="section" id="work">
-    {{ sectionHeading(locale.sections.work.index, locale.sections.work.title) }}
+  <section class="section" id="education">
+    {{ sectionHeading(locale.sections.education.index, locale.sections.education.title) }}
     <div class="section-body">
       <div class="simple-list">
-        {% for item in locale.sections.work.items %}
+        {% for item in locale.sections.education.items %}
           <div class="simple-item">
             <div class="item-meta">{{ item.meta }}</div>
             <div class="item-content">
