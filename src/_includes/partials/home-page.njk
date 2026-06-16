@@ -95,6 +95,7 @@
     <div class="section-body">
       <div class="pub-list">
         {% for pub in publications %}
+          {% if loop.index <= 5 %}
           <article class="pub-item">
             <div class="pub-year">{{ pub.year }}</div>
             <div class="pub-body">
@@ -119,7 +120,43 @@
               </p>
             </div>
           </article>
+          {% endif %}
         {% endfor %}
+        {% if publications.length > 5 %}
+          <details class="pub-more">
+            <summary>{{ locale.ui.publicationsMore }}</summary>
+            <div class="pub-more-body">
+              {% for pub in publications %}
+                {% if loop.index > 5 %}
+                  <article class="pub-item">
+                    <div class="pub-year">{{ pub.year }}</div>
+                    <div class="pub-body">
+                      <h3>{{ pub.title }}</h3>
+                      {% if pub.authors %}
+                        <p class="pub-authors">{{ pub.authors | join(" 路 ") }}</p>
+                      {% endif %}
+                      <p class="pub-meta">
+                        {% if pub.journal %}<span class="pub-journal">{{ pub.journal }}</span>{% endif %}
+                        {% if pub.volume %}<span class="pub-chip">{{ pub.volume }}</span>{% endif %}
+                        {% if pub.pages %}<span class="pub-chip">{{ pub.pages }}</span>{% endif %}
+                        {% if pub.kind %}<span class="pub-chip">{{ pub.kind }}</span>{% endif %}
+                      </p>
+                      <p class="pub-links">
+                        {% if pub.doi %}
+                          <a href="https://doi.org/{{ pub.doi }}">DOI</a>
+                        {% endif %}
+                        {% if pub.pdf %}
+                          {% if pub.doi %}<span class="sep">路</span>{% endif %}
+                          <a href="{{ pub.pdf | url }}">PDF</a>
+                        {% endif %}
+                      </p>
+                    </div>
+                  </article>
+                {% endif %}
+              {% endfor %}
+            </div>
+          </details>
+        {% endif %}
       </div>
     </div>
   </section>

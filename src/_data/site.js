@@ -20,6 +20,7 @@ const zh = {
     videoLabel: "视频位置",
     videoText: "这里预留用于放置项目演示视频、录屏或嵌入播放器。",
     projectLink: "项目详情和 demo",
+    publicationsMore: "展开更多论文",
   },
   hero: {
     eyebrow: "Academic Homepage",
@@ -40,6 +41,8 @@ const zh = {
       { label: "邮箱", value: "zuoxu_wang@buaa.edu.cn", href: "mailto:zuoxu_wang@buaa.edu.cn" },
       { label: "备用邮箱", value: "zuoxu.wang@outlook.com", href: "mailto:zuoxu.wang@outlook.com" },
       { label: "ORCID", value: "0000-0003-2524-1217", href: "https://orcid.org/0000-0003-2524-1217" },
+      { label: "Google Scholar", value: "Google Scholar", href: "https://scholar.google.com.sg/citations?user=kja7k5MAAAAJ&hl=en&oi=ao" },
+      { label: "ResearchGate", value: "ResearchGate", href: "https://www.researchgate.net/profile/Zuoxu-Wang" },
       { label: "课题组", value: "https://wangzuoxu.github.io/iid/", href: "https://wangzuoxu.github.io/iid/" },
     ],
   },
@@ -243,6 +246,7 @@ const en = {
     videoLabel: "Video placeholder",
     videoText: "This space is reserved for a project demo video, screen recording, or embedded player.",
     projectLink: "Project details and demo",
+    publicationsMore: "Show more publications",
   },
   hero: {
     eyebrow: "Academic Homepage",
@@ -263,6 +267,8 @@ const en = {
       { label: "Email", value: "zuoxu_wang@buaa.edu.cn", href: "mailto:zuoxu_wang@buaa.edu.cn" },
       { label: "Alt. email", value: "zuoxu.wang@outlook.com", href: "mailto:zuoxu.wang@outlook.com" },
       { label: "ORCID", value: "0000-0003-2524-1217", href: "https://orcid.org/0000-0003-2524-1217" },
+      { label: "Google Scholar", value: "Google Scholar", href: "https://scholar.google.com.sg/citations?user=kja7k5MAAAAJ&hl=en&oi=ao" },
+      { label: "ResearchGate", value: "ResearchGate", href: "https://www.researchgate.net/profile/Zuoxu-Wang" },
       { label: "Research Group", value: "Research Group", href: "https://wangzuoxu.github.io/iid/" },
     ],
   },
