@@ -164,6 +164,11 @@
   <section class="section" id="projects">
     {{ sectionHeading(locale.sections.projects.index, locale.sections.projects.title) }}
     <div class="section-body">
+      <p class="projects-callout">
+        {{ locale.ui.projectsGroupLabel }}:
+        <a href="https://wangzuoxu.github.io/iid/">https://wangzuoxu.github.io/iid/</a>
+        <span class="projects-callout-note">{{ locale.ui.projectsCallout }}</span>
+      </p>
       <div class="project-list">
         {% for item in locale.sections.projects.items %}
           <article class="project-item">

@@ -332,6 +332,24 @@ h1 {
   gap: 12px;
 }
 
+.projects-callout {
+  margin: 0 0 14px;
+  padding: 14px 16px;
+  border-radius: 14px;
+  background: rgba(31, 78, 216, 0.06);
+  color: var(--muted);
+  line-height: 1.8;
+}
+
+.projects-callout a {
+  color: var(--accent);
+  font-weight: 700;
+}
+
+.projects-callout-note {
+  margin-left: 8px;
+}
+
 .project-item {
   padding: 16px 18px;
   background: var(--panel-soft);

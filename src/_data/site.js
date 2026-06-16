@@ -19,6 +19,8 @@ const zh = {
     demoTitle: "Demo 演示区",
     videoLabel: "视频位置",
     videoText: "这里预留用于放置项目演示视频、录屏或嵌入播放器。",
+    projectsGroupLabel: "课题组",
+    projectsCallout: "我们在做什么，点这里",
     publicationsMore: "展开更多论文",
   },
   hero: {
@@ -240,6 +242,8 @@ const en = {
     demoTitle: "Demo",
     videoLabel: "Video placeholder",
     videoText: "This space is reserved for a project demo video, screen recording, or embedded player.",
+    projectsGroupLabel: "Research Group",
+    projectsCallout: "What we are doing, click here",
     publicationsMore: "Show more publications",
   },
   hero: {
