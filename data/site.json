@@ -25,7 +25,7 @@
   "sections": {
     "education": {
       "id": "education",
-      "index": "01",
+      "index": "02",
       "title": "教育经历",
       "items": [
         {
@@ -41,7 +41,7 @@
     },
     "work": {
       "id": "work",
-      "index": "02",
+      "index": "01",
       "title": "工作经历",
       "items": [
         {
