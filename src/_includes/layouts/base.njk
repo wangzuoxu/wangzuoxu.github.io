@@ -1,23 +1,25 @@
 ﻿<!doctype html>
-<html lang="zh-CN">
+<html lang="{{ lang or site.locales[site.defaultLang].pageLang }}">
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <meta name="description" content="{{ description or site.hero.summary }}" />
-    <title>{{ title or (site.hero.name + " | 学术主页") }}</title>
+    <meta name="description" content="{{ description or site.locales[lang or site.defaultLang].pageDescription }}" />
+    <title>{{ title or site.locales[lang or site.defaultLang].pageTitle }}</title>
     <link rel="stylesheet" href="{{ '/styles.css' | url }}" />
   </head>
   <body>
     <header class="site-header">
       <div class="site-header-inner">
-        <a class="brand brand-link" href="{{ '/' | url }}">
+        {% set locale = site.locales[lang or site.defaultLang] %}
+        <a class="brand brand-link" href="{{ locale.ui.homeHref | url }}">
           <span class="brand-mark"></span>
           <span>{{ site.brand }}</span>
         </a>
-        <nav class="nav-links" aria-label="主导航">
-          {% for item in site.hero.nav %}
+        <nav class="nav-links" aria-label="{{ locale.ui.primaryNavLabel }}">
+          {% for item in locale.hero.nav %}
             <a href="{{ item.href }}">{{ item.label }}</a>
           {% endfor %}
+          <a class="lang-switch" href="{{ locale.ui.switchHref | url }}" aria-label="{{ locale.ui.switchAria }}">{{ locale.ui.switchText }}</a>
         </nav>
       </div>
     </header>

@@ -1,0 +1,14 @@
+---
+layout: layouts/base.njk
+lang: en
+pagination:
+  data: site.locales.en.sections.projects.items
+  size: 1
+  alias: project
+permalink: "en/{{ project.href }}"
+eleventyComputed:
+  title: "{{ project.title }} | Zuoxu Wang"
+  description: "{{ project.text }}"
+---
+{% set locale = site.locales.en %}
+{% include "partials/project-page.njk" %}

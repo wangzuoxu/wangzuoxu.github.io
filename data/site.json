@@ -18,8 +18,8 @@
     "contacts": [
       { "label": "邮箱", "value": "zuoxu_wang@buaa.edu.cn", "href": "mailto:zuoxu_wang@buaa.edu.cn" },
       { "label": "备用邮箱", "value": "zuoxu.wang@outlook.com", "href": "mailto:zuoxu.wang@outlook.com" },
-      { "label": "ORCID", "value": "0000-0003-2524-1217", "href": "https://orcid.org/0000-0003-2524-1217" },
-      { "label": "电话", "value": "(+86) 18404264161", "href": "tel:+8618404264161" }
+      { "label": "ORCID", "value": "0000-0003-2524-1217", "href": "https://orcid.org/0000-0003-2524-1217" }
+
     ]
   },
   "sections": {
@@ -201,7 +201,6 @@
       "items": [
         { "label": "邮箱", "value": "zuoxu_wang@buaa.edu.cn", "href": "mailto:zuoxu_wang@buaa.edu.cn" },
         { "label": "备用邮箱", "value": "zuoxu.wang@outlook.com", "href": "mailto:zuoxu.wang@outlook.com" },
-        { "label": "电话", "value": "(+86) 18404264161", "href": "tel:+8618404264161" },
         { "label": "ORCID", "value": "0000-0003-2524-1217", "href": "https://orcid.org/0000-0003-2524-1217" },
         { "label": "地址", "value": "北京市海淀区学院路 37 号，北京航空航天大学新主楼" }
       ]

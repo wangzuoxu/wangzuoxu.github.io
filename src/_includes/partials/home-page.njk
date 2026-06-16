@@ -1,0 +1,223 @@
+<main class="page">
+  <section class="hero">
+    <div class="hero-top">
+      <div class="hero-title">
+        <p class="eyebrow">{{ locale.hero.eyebrow }}</p>
+        <h1>{{ locale.hero.name }}</h1>
+        {% if locale.hero.subtitle %}
+          <p class="subtitle">{{ locale.hero.subtitle }}</p>
+        {% endif %}
+        <p class="affiliation">{{ locale.hero.affiliation }}</p>
+      </div>
+
+      <div class="hero-contacts">
+        {% for item in locale.hero.contacts %}
+          <span>
+            {{ item.label }}:
+            {% if item.href %}
+              <a href="{{ item.href }}">{{ item.value }}</a>
+            {% else %}
+              {{ item.value }}
+            {% endif %}
+          </span>
+        {% endfor %}
+      </div>
+    </div>
+
+    <div class="hero-summary">{{ locale.hero.summary }}</div>
+  </section>
+
+  {% macro sectionHeading(index, title) %}
+    <div class="section-heading">
+      <p class="section-index">{{ index }}</p>
+      <h2>{{ title }}</h2>
+    </div>
+  {% endmacro %}
+
+  <section class="section" id="education">
+    {{ sectionHeading(locale.sections.education.index, locale.sections.education.title) }}
+    <div class="section-body">
+      <div class="simple-list">
+        {% for item in locale.sections.education.items %}
+          <div class="simple-item">
+            <div class="item-meta">{{ item.meta }}</div>
+            <div class="item-content">
+              <h3>{{ item.title }}</h3>
+              {% if item.text %}
+                <p>{{ item.text }}</p>
+              {% endif %}
+            </div>
+          </div>
+        {% endfor %}
+      </div>
+    </div>
+  </section>
+
+  <section class="section" id="work">
+    {{ sectionHeading(locale.sections.work.index, locale.sections.work.title) }}
+    <div class="section-body">
+      <div class="simple-list">
+        {% for item in locale.sections.work.items %}
+          <div class="simple-item">
+            <div class="item-meta">{{ item.meta }}</div>
+            <div class="item-content">
+              <h3>{{ item.title }}</h3>
+              {% if item.text %}
+                <p>{{ item.text }}</p>
+              {% endif %}
+            </div>
+          </div>
+        {% endfor %}
+      </div>
+    </div>
+  </section>
+
+  <section class="section" id="research">
+    {{ sectionHeading(locale.sections.research.index, locale.sections.research.title) }}
+    <div class="section-body">
+      <div class="two-col">
+        {% for panel in locale.sections.research.panels %}
+          <div class="panel">
+            <h3>{{ panel.title }}</h3>
+            <ul class="bullet-list">
+              {% for item in panel.items %}
+                <li>{{ item }}</li>
+              {% endfor %}
+            </ul>
+          </div>
+        {% endfor %}
+      </div>
+    </div>
+  </section>
+
+  <section class="section" id="publications">
+    {{ sectionHeading(locale.sections.publications.index, locale.sections.publications.title) }}
+    <div class="section-body">
+      <div class="pub-list">
+        {% for pub in publications %}
+          <article class="pub-item">
+            <div class="pub-year">{{ pub.year }}</div>
+            <div class="pub-body">
+              <h3>{{ pub.title }}</h3>
+              {% if pub.authors %}
+                <p class="pub-authors">{{ pub.authors | join(" · ") }}</p>
+              {% endif %}
+              <p class="pub-meta">
+                {% if pub.journal %}<span class="pub-journal">{{ pub.journal }}</span>{% endif %}
+                {% if pub.volume %}<span class="pub-chip">{{ pub.volume }}</span>{% endif %}
+                {% if pub.pages %}<span class="pub-chip">{{ pub.pages }}</span>{% endif %}
+                {% if pub.kind %}<span class="pub-chip">{{ pub.kind }}</span>{% endif %}
+              </p>
+              <p class="pub-links">
+                {% if pub.doi %}
+                  <a href="https://doi.org/{{ pub.doi }}">DOI</a>
+                {% endif %}
+                {% if pub.pdf %}
+                  {% if pub.doi %}<span class="sep">·</span>{% endif %}
+                  <a href="{{ pub.pdf | url }}">PDF</a>
+                {% endif %}
+              </p>
+            </div>
+          </article>
+        {% endfor %}
+      </div>
+    </div>
+  </section>
+
+  <section class="section" id="projects">
+    {{ sectionHeading(locale.sections.projects.index, locale.sections.projects.title) }}
+    <div class="section-body">
+      <div class="project-list">
+        {% for item in locale.sections.projects.items %}
+          <details class="project-item" {% if item.open %}open{% endif %}>
+            <summary>
+              <div class="item-meta">{{ item.meta }}</div>
+              <div class="summary-title">{{ item.title }}</div>
+              <div class="summary-tag">{{ item.tag }}</div>
+            </summary>
+            <div class="project-detail">
+              <p>{{ item.text }}</p>
+              <div class="project-links">
+                <a href="{{ item.href | url }}">{{ locale.ui.projectLink }}</a>
+              </div>
+            </div>
+          </details>
+        {% endfor %}
+      </div>
+    </div>
+  </section>
+
+  <section class="section" id="patents">
+    {{ sectionHeading(locale.sections.patents.index, locale.sections.patents.title) }}
+    <div class="section-body">
+      <div class="two-col">
+        {% for panel in locale.sections.patents.panels %}
+          <div class="panel">
+            <h3>{{ panel.title }}</h3>
+            <ul class="bullet-list">
+              {% for item in panel.items %}
+                <li>{{ item }}</li>
+              {% endfor %}
+            </ul>
+          </div>
+        {% endfor %}
+      </div>
+    </div>
+  </section>
+
+  <section class="section" id="teaching">
+    {{ sectionHeading(locale.sections.teaching.index, locale.sections.teaching.title) }}
+    <div class="section-body">
+      <div class="two-col">
+        {% for panel in locale.sections.teaching.panels %}
+          <div class="panel">
+            <h3>{{ panel.title }}</h3>
+            <ul class="bullet-list">
+              {% for item in panel.items %}
+                <li>{{ item }}</li>
+              {% endfor %}
+            </ul>
+          </div>
+        {% endfor %}
+      </div>
+    </div>
+  </section>
+
+  <section class="section" id="awards">
+    {{ sectionHeading(locale.sections.awards.index, locale.sections.awards.title) }}
+    <div class="section-body">
+      <div class="two-col">
+        {% for panel in locale.sections.awards.panels %}
+          <div class="panel">
+            <h3>{{ panel.title }}</h3>
+            <ul class="bullet-list">
+              {% for item in panel.items %}
+                <li>{{ item }}</li>
+              {% endfor %}
+            </ul>
+          </div>
+        {% endfor %}
+      </div>
+    </div>
+  </section>
+
+  <section class="section" id="contact">
+    {{ sectionHeading(locale.sections.contact.index, locale.sections.contact.title) }}
+    <div class="section-body">
+      <div class="panel">
+        <ul class="bullet-list contact-list">
+          {% for item in locale.sections.contact.items %}
+            <li>
+              {{ item.label }}:
+              {% if item.href %}
+                <a href="{{ item.href }}">{{ item.value }}</a>
+              {% else %}
+                {{ item.value }}
+              {% endif %}
+            </li>
+          {% endfor %}
+        </ul>
+      </div>
+    </div>
+  </section>
+</main>
